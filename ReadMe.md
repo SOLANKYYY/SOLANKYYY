@@ -1,18 +1,110 @@
-# 💫 About Me:
-Hi, I'm an Artificial Intelligence and Machine Learning student dedicated to exploring data science, intelligent systems, and algorithmic problem-solving. My academic foundation is built on a deep dive into AI/ML concepts, advanced data structures, and optimized algorithms, allowing me to focus heavily on writing clean, efficient, and performance-driven code.<br><br>As an aspiring software developer, my experience spans building custom computer vision applications, training robust machine learning models like Random Forest Classifiers, and working with Natural Language Processing (NLP). Alongside AI, I actively develop responsive web applications, integrating interactive frontend frameworks with powerful backend logic to bring data-driven tools to life. I thrive on translating complex, theoretical concepts into functional, real-world software solutions. I am always open to collaborating on impactful open-source projects, exploring new technologies, and continuous learning. Feel free to explore my repositories and connect!
+<div align="center">
 
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=250&section=header&text=Om%20Solanki&fontSize=60&fontColor=fff&animation=fadeIn&fontAlignY=38&desc=AI/ML%20Engineer%20%7C%20Full-Stack%20Developer&descAlignY=55&descSize=20" width="100%"/>
 
-## 🌐 Socials:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/solanki-om-narendra-b89793330/) [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/https://x.com/Om_solanki49) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:om.n.solanki49@gmail.com) 
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=3000&pause=800&color=8A2BE2&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=100&lines=Turning+Data+into+Decisions+%F0%9F%A7%A0;Building+Intelligent+Systems+%E2%9A%99%EF%B8%8F;Computer+Vision+%7C+NLP+%7C+ML+%F0%9F%94%AC;Open+to+Collaborate+on+OSS+%F0%9F%9A%80" alt="Typing SVG" />
 
-# 💻 Tech Stack:
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white) ![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) ![mlflow](https://img.shields.io/badge/mlflow-%23d9ead3.svg?style=for-the-badge&logo=numpy&logoColor=blue) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white) ![Scipy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.shion.dev/api?username=SOLANKYYY&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://streak-stats.demolab.com/?user=SOLANKYYY&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.shion.dev/api/top-langs/?username=SOLANKYYY&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+<img src="https://komarev.com/ghpvc/?username=SOLANKYYY&label=Profile%20Views&color=8a2be2&style=for-the-badge" alt="profile views"/>
+&nbsp;
+<a href="https://linkedin.com/in/solanki-om-narendra-b89793330"><img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+&nbsp;
+<a href="https://x.com/Om_solanki49"><img src="https://img.shields.io/badge/X-Follow-black?style=for-the-badge&logo=x&logoColor=white"/></a>
+&nbsp;
+<a href="mailto:om.n.solanki49@gmail.com"><img src="https://img.shields.io/badge/Email-Say%20Hi-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
 
----
-[![](https://komarev.com/ghpvc/?username=SOLANKYYY&icon=1&color=1)](https://visitcount.itsvg.in)
+</div>
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+<br>
+
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.gif" width="100%">
+
+## 💫 About Me
+
+```yaml
+role: "AI/ML Student & Aspiring Software Developer"
+focus:
+  - Data Science & Intelligent Systems
+  - Advanced Data Structures & Algorithms
+  - Clean, efficient, performance-driven code
+experience:
+  - Custom Computer Vision applications
+  - Machine Learning models (Random Forest Classifiers & more)
+  - Natural Language Processing (NLP)
+  - Full-stack web apps (interactive frontends + robust backend logic)
+mindset: "Turning theoretical concepts into functional, real-world software."
+currently: "Open to collaborating on impactful open-source projects 🌱"
+```
+
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.gif" width="100%">
+
+## 🛠️ Tech Arsenal
+
+<div align="center">
+
+### Languages & Core
+<img src="https://skillicons.dev/icons?i=py,java,js,html,css,cs&theme=dark" />
+
+### Frontend & Frameworks
+<img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,bootstrap,figma&theme=dark" />
+
+### Backend & APIs
+<img src="https://skillicons.dev/icons?i=fastapi,nodejs,dotnet&theme=dark" />
+
+### Databases & Cloud
+<img src="https://skillicons.dev/icons?i=mysql,mongodb,postgres,firebase,docker&theme=dark" />
+
+### AI / ML / Data Science
+<img src="https://skillicons.dev/icons?i=pytorch,tensorflow,sklearn,opencv&theme=dark" />
+<br/>
+<img src="https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=Keras&logoColor=white"/>
+<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white"/>
+<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
+<img src="https://img.shields.io/badge/Matplotlib-white?style=for-the-badge&logo=Matplotlib&logoColor=black"/>
+<img src="https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white"/>
+<img src="https://img.shields.io/badge/SciPy-0C55A5?style=for-the-badge&logo=scipy&logoColor=white"/>
+<img src="https://img.shields.io/badge/mlflow-0194E2?style=for-the-badge&logo=mlflow&logoColor=white"/>
+
+</div>
+
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.gif" width="100%">
+
+## 📊 GitHub Analytics
+
+<div align="center">
+
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=SOLANKYYY&show_icons=true&theme=radical&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SOLANKYYY&layout=compact&theme=radical&hide_border=true&bg_color=0d1117"/>
+
+<img src="https://streak-stats.demolab.com/?user=SOLANKYYY&theme=radical&hide_border=true&background=0d1117"/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=SOLANKYYY&theme=react-dark&hide_border=true&bg_color=0d1117&area=true" width="100%"/>
+
+<img src="https://github-profile-trophy.vercel.app/?username=SOLANKYYY&theme=radical&no-frame=true&row=1&column=7" width="100%"/>
+
+</div>
+
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.gif" width="100%">
+
+## 🐍 Contribution Snake
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/SOLANKYYY/SOLANKYYY/output/github-contribution-grid-snake-dark.svg" width="100%"/>
+
+<sub>⚡ Powered by a GitHub Action that "eats" your contribution graph — see setup notes below.</sub>
+
+</div>
+
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.gif" width="100%">
+
+## 🤝 Let's Build Something
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg" width="1"/>
+
+I'm always down to collaborate on **AI/ML**, **computer vision**, or **full-stack** projects — feel free to open an issue, fork a repo, or just say hey 👋
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer" width="100%"/>
+
+</div>
