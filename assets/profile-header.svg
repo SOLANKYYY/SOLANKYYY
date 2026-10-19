@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" role="img" aria-labelledby="title desc">
+  <title id="title">Om Solanki</title>
+  <desc id="desc">AI/ML student and software developer. Bengaluru, India. Open to collaboration.</desc>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#dce5d9" stroke-width="1"/></pattern>
+    <clipPath id="card"><rect width="1200" height="440" rx="22"/></clipPath>
+  </defs>
+  <g clip-path="url(#card)">
+    <rect width="1200" height="440" fill="#faf9f4"/>
+    <rect x="828" width="372" height="440" fill="#edf2e9"/>
+    <rect x="828" width="372" height="440" fill="url(#grid)"/>
+    <path d="M828 0V440" stroke="#d4dfcf"/>
+    <g font-family="Arial, Helvetica, sans-serif">
+      <text x="60" y="57" font-size="13" letter-spacing="3" fill="#526451">SOLANKYYY / PERSONAL FIELD NOTES</text>
+      <circle cx="66" cy="108" r="6" fill="#22c55e"/>
+      <text x="84" y="113" font-size="15" fill="#37634b">Open to collaboration</text>
+      <text x="55" y="216" font-size="86" font-weight="700" letter-spacing="-5" fill="#203c30">Om Solanki.</text>
+      <text x="60" y="264" font-size="23" fill="#405b4c">Curious about data. Serious about building.</text>
+      <text x="60" y="311" font-size="17" fill="#627267">AI/ML student &amp; software developer</text>
+      <path d="M60 350H768" stroke="#d4dfcf"/>
+      <text x="60" y="390" font-size="13" letter-spacing="2" fill="#526451">BENGALURU, INDIA</text>
+      <text x="768" y="390" text-anchor="end" font-size="13" letter-spacing="2" fill="#526451">LEARN. BUILD. REFINE.</text>
+      <circle cx="1014" cy="209" r="112" fill="#faf9f4" stroke="#b7cbb2"/>
+      <circle cx="1014" cy="209" r="83" fill="none" stroke="#d4dfcf"/>
+      <path d="M958 233L996 166L1033 230L1071 180" fill="none" stroke="#2f7250" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <g fill="#faf9f4" stroke="#2f7250" stroke-width="3"><circle cx="958" cy="233" r="7"/><circle cx="996" cy="166" r="7"/><circle cx="1033" cy="230" r="7"/></g>
+      <circle cx="1071" cy="180" r="9" fill="#22c55e"/>
+      <text x="1014" y="368" text-anchor="middle" font-size="12" letter-spacing="3" fill="#526451">IDEAS INTO APPLICATIONS</text>
+    </g>
+  </g>
+</svg>
