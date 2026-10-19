@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="180" viewBox="0 0 1280 180" role="img" aria-labelledby="title desc">
+  <title id="title">Keep learning. Keep building.</title>
+  <desc id="desc">A soft green animated wave beneath Om Solanki's profile.</desc>
+  <style>
+    .wave { animation: drift 18s ease-in-out infinite alternate; }
+    .wave-two { animation: drift 24s ease-in-out infinite alternate-reverse; }
+    @keyframes drift { to { transform: translateX(-120px); } }
+    @media (prefers-reduced-motion: reduce) { .wave,.wave-two { animation: none; } }
+  </style>
+  <defs><clipPath id="edge"><rect width="1280" height="180" rx="22"/></clipPath></defs>
+  <g clip-path="url(#edge)">
+    <rect width="1280" height="180" fill="#fafcf7"/>
+    <path class="wave" d="M-160 114Q80 60 320 114T800 114T1280 114T1760 114V200H-160Z" fill="#e1f2e5"/>
+    <path class="wave-two" d="M-160 145Q80 100 320 145T800 145T1280 145T1760 145V200H-160Z" fill="#cbe7d4" opacity=".7"/>
+    <text x="640" y="70" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" fill="#315941">Keep learning. Keep building.</text>
+  </g>
+</svg>
