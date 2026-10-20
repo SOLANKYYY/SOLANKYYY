@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/profile-header.svg" width="100%" alt="Om Solanki — AI/ML student in Bengaluru, India. Applied AI, computer vision, and web development. Open to collaboration." />
+  <img src="assets/profile-portrait.svg" width="100%" alt="Om Solanki — AI/ML student in Bengaluru, India. Applied AI, computer vision, and web development. Open to collaboration." />
 </p>
 
 <p align="center">
