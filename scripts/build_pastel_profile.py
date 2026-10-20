@@ -161,21 +161,32 @@ panel('focus','Where curiosity takes me',[
 
 projects=[]
 raw_projects=section('Selected projects').split('\n### ')[1:]
+icons=[
+    '<path d="M5 24Q24 3 43 24Q24 45 5 24Z"/><circle cx="24" cy="24" r="7"/>',
+    '<path d="M24 5L40 11V24Q38 37 24 44Q10 37 8 24V11Z"/><path d="M17 21H31M17 27H27"/>',
+    '<path d="M10 36Q5 10 37 8Q43 34 10 36ZM10 36L31 16"/><path d="M22 26V17M22 26H32"/>',
+    '<path d="M11 13L35 12L24 36ZM11 13L24 25L35 12M24 25V36"/><circle cx="11" cy="13" r="5"/><circle cx="35" cy="12" r="5"/><circle cx="24" cy="36" r="5"/>',
+    '<path d="M6 17V7H16M32 7H42V17M42 31V41H32M16 41H6V31"/><path d="M16 31Q24 37 32 31"/><circle cx="18" cy="22" r="1"/><circle cx="30" cy="22" r="1"/>',
+    '<path d="M22 6V23M26 6V23M22 19Q15 9 11 17Q5 27 7 38Q12 44 21 35V23M26 19Q33 9 37 17Q43 27 41 38Q36 44 27 35V23"/>'
+]
 for i,raw in enumerate(raw_projects):
     raw=raw.split('<details>')[0].strip()
     lines=raw.split('\n',1)
     title=lines[0].split(' / ',1)[1]
     ps=paragraphs(lines[1])
-    subtitle=ps.pop(0)
-    blocks=[]
+    subtitle=ps[0]
     links=re.findall(r'\]\((https://github.com/[^)]+)\)',raw)
-    for p in ps:
-        if p.startswith(('Source &','Explore the demo')):continue
-        if p.startswith('Built with:'):
-            blocks.append(('Tools & technologies',p[len('Built with:'):].strip()))
-        else:blocks.append((None,p))
-    panel(f'project-{i+1}',title,[(subtitle,'')]+blocks,i,'Selected work / '+f'{i+1:02}', 'Explore the project →')
-    projects.append((title,links[0]))
+    tags=next(p.removeprefix('Built with:').strip() for p in ps if p.startswith('Built with:'))
+    short_title={'AgriLens LLM Benchmark':'AgriLens','TraceLens Sysmon Lab':'TraceLens','VeraGate Face Lab':'VeraGate'}.get(title,title)
+    bg,accent,border=PALETTES[i%4]
+    card=f'<rect x="24" y="23" width="60" height="60" rx="16" fill="{border}" opacity=".6"/>'
+    card+=f'<g transform="translate(30 29)" fill="none" stroke="{accent}" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">{icons[i]}</g>'
+    card+=script(short_title,102,69,50,accent,280)
+    card+=f'<path d="M397 31H409V43M409 31L396 44" fill="none" stroke="{accent}" stroke-width="2" stroke-linecap="round"/>'
+    card+=text(subtitle,24,117,18)
+    card+=text(tags,24,151,15,accent)
+    (OUT/f'project-card-{i+1}.svg').write_text(base(440,178,PALETTES[i%4],title+' — '+subtitle,card),encoding='utf-8')
+    projects.append((title,links[0],subtitle))
 
 toolkit=[]
 for line in section('Technical toolkit').splitlines():
@@ -219,9 +230,10 @@ md+=contact_row()
 md+='<p align="center"><a href="PROFILE.md">Read the complete profile in text</a></p>\n\n'
 md+=picture('about','About Om: AI/ML student at Jain University, working across computer vision, language-model evaluation, security analytics, and web development.')
 md+=picture('focus','Focus: applied machine learning, computer vision, and software interfaces.')
-for i,(title,link) in enumerate(projects):
-    md+=picture(f'project-{i+1}',f'{title} — project overview, approach, scope, and technologies. Open repository.',link)
-    if i==0:md+='<p align="center"><a href="https://retina-bridge.vercel.app/">Explore the RetinaBridge demonstration ↗</a></p>\n\n'
+md+='<p align="center">\n'
+for i,(title,link,subtitle) in enumerate(projects):
+    md+=f'  <a href="{link}"><img src="assets/pastel/project-card-{i+1}.svg" width="410" alt="{escape(title+": "+subtitle,quote=True)}"></a>\n'
+md+='</p>\n\n'
 md+='<details>\n<summary><strong>More experiments to explore</strong></summary>\n\n'
 md+=section('Selected projects').split('<details>',1)[1].split('<br>',1)[1].split('</details>')[0].strip()+'\n\n</details>\n\n'
 for name,alt in [('toolkit','Technical toolkit: languages, machine learning, vision, data, web, UI, databases, and local LLM experiments.'),('approach','Project approach: understand, experiment, build, and refine.'),('learning','Learning through building: notes about connecting experiments, interfaces, and software foundations.'),('exploring','Currently exploring model evaluation, computer vision, software foundations, and application development.'),('contributions','Little steps, lasting progress: my GitHub contribution trail.')]:

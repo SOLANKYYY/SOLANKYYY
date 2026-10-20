@@ -22,49 +22,14 @@
   <img src="assets/pastel/focus.svg" width="100%" alt="Focus: applied machine learning, computer vision, and software interfaces.">
 </picture>
 
-<a href="https://github.com/SOLANKYYY/RetinaBridge">
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/pastel/project-1-mobile.svg">
-  <img src="assets/pastel/project-1.svg" width="100%" alt="RetinaBridge — project overview, approach, scope, and technologies. Open repository.">
-</picture>
-</a>
-
-<p align="center"><a href="https://retina-bridge.vercel.app/">Explore the RetinaBridge demonstration ↗</a></p>
-
-<a href="https://github.com/SOLANKYYY/signal-desk">
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/pastel/project-2-mobile.svg">
-  <img src="assets/pastel/project-2.svg" width="100%" alt="Signal Desk — project overview, approach, scope, and technologies. Open repository.">
-</picture>
-</a>
-
-<a href="https://github.com/SOLANKYYY/agrilens-llm-benchmark">
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/pastel/project-3-mobile.svg">
-  <img src="assets/pastel/project-3.svg" width="100%" alt="AgriLens LLM Benchmark — project overview, approach, scope, and technologies. Open repository.">
-</picture>
-</a>
-
-<a href="https://github.com/SOLANKYYY/tracelens-sysmon-lab">
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/pastel/project-4-mobile.svg">
-  <img src="assets/pastel/project-4.svg" width="100%" alt="TraceLens Sysmon Lab — project overview, approach, scope, and technologies. Open repository.">
-</picture>
-</a>
-
-<a href="https://github.com/SOLANKYYY/veragate-face-lab">
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/pastel/project-5-mobile.svg">
-  <img src="assets/pastel/project-5.svg" width="100%" alt="VeraGate Face Lab — project overview, approach, scope, and technologies. Open repository.">
-</picture>
-</a>
-
-<a href="https://github.com/SOLANKYYY/lunglens">
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/pastel/project-6-mobile.svg">
-  <img src="assets/pastel/project-6.svg" width="100%" alt="LungLens — project overview, approach, scope, and technologies. Open repository.">
-</picture>
-</a>
+<p align="center">
+  <a href="https://github.com/SOLANKYYY/RetinaBridge"><img src="assets/pastel/project-card-1.svg" width="410" alt="RetinaBridge: Retinal-imaging research &amp; explanations."></a>
+  <a href="https://github.com/SOLANKYYY/signal-desk"><img src="assets/pastel/project-card-2.svg" width="410" alt="Signal Desk: Security reports, evidence &amp; analyst tools."></a>
+  <a href="https://github.com/SOLANKYYY/agrilens-llm-benchmark"><img src="assets/pastel/project-card-3.svg" width="410" alt="AgriLens LLM Benchmark: Local LLM evaluation on agricultural data."></a>
+  <a href="https://github.com/SOLANKYYY/tracelens-sysmon-lab"><img src="assets/pastel/project-card-4.svg" width="410" alt="TraceLens Sysmon Lab: Sysmon embeddings &amp; classification."></a>
+  <a href="https://github.com/SOLANKYYY/veragate-face-lab"><img src="assets/pastel/project-card-5.svg" width="410" alt="VeraGate Face Lab: Face-recognition threshold experiments."></a>
+  <a href="https://github.com/SOLANKYYY/lunglens"><img src="assets/pastel/project-card-6.svg" width="410" alt="LungLens: Educational imaging &amp; synthetic patterns."></a>
+</p>
 
 <details>
 <summary><strong>More experiments to explore</strong></summary>

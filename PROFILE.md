@@ -26,83 +26,53 @@ I'm especially interested in the details that make an experiment understandable:
 
 ## Selected projects
 
-A selection of research prototypes, interactive labs, and applications. Each repository includes more detail about its implementation and scope.
-
 ### 01 / RetinaBridge
-**Retinal-imaging research, connected to a web application**
 
-A research prototype connecting MATLAB model development with Python and ONNX inference. The application brings together patient intake, five-class diabetic retinopathy prediction, Grad-CAM visual explanations, and printable review reports.
+Retinal-imaging research & explanations.
 
-The interesting engineering problem is the full handoff: from model development to inference, visual explanation, and a reviewable interface. The project is a research demonstration rather than a clinically validated diagnostic system.
+**Built with:** MATLAB · ONNX · Flask
 
-**Built with:** MATLAB · Python · Flask · ONNX Runtime · OpenCV · JavaScript
-
-[Source & documentation ↗](https://github.com/SOLANKYYY/RetinaBridge) · [Explore the demo ↗](https://retina-bridge.vercel.app/)
-
----
+[Explore the project ↗](https://github.com/SOLANKYYY/RetinaBridge)
 
 ### 02 / Signal Desk
-**A workspace for cyber threat intelligence**
 
-A Python and Flask application for searching security reports and PDF evidence, tracking document processing, and recording analyst decisions. MongoDB supports the workspace's data, while PDF extraction makes report content available for exploration.
+Security reports, evidence & analyst tools.
 
-This project focuses on organizing information into a usable investigation workflow. Its ratings use deterministic rules, with the evidence and analyst decisions kept visible.
+**Built with:** Python · Flask · MongoDB
 
-**Built with:** Python · Flask · MongoDB · PyMongo · pypdf · JavaScript
-
-[Source & documentation ↗](https://github.com/SOLANKYYY/signal-desk)
-
----
+[Explore the project ↗](https://github.com/SOLANKYYY/signal-desk)
 
 ### 03 / AgriLens LLM Benchmark
-**Inspecting what local language models get right—and wrong**
 
-A local-LLM evaluation project comparing models on the same agricultural dataset. An interactive explorer makes saved responses, errors, and per-crop results available for inspection across **2,200 records**.
+Local LLM evaluation on agricultural data.
 
-The emphasis is on evaluation: comparing outputs against the data and understanding failure patterns. The browser presents recorded experiments; model runs use Ollama locally.
+**Built with:** Python · Ollama · JavaScript
 
-**Built with:** Python · Ollama · DeepSeek-R1 1.5B · Llama 3.2 3B · JavaScript
-
-[Source & experiment results ↗](https://github.com/SOLANKYYY/agrilens-llm-benchmark)
-
----
+[Explore the project ↗](https://github.com/SOLANKYYY/agrilens-llm-benchmark)
 
 ### 04 / TraceLens Sysmon Lab
-**Exploring event representations and classification experiments**
 
-A research explorer comparing LDA and autoencoder compression of MiniLM embeddings for Sysmon events. It brings published experiment metrics together with an interactive lab for investigating labeling rules.
+Sysmon embeddings & classification.
 
-This is an exploration of representations, compression, and evaluation choices. The repository documents the heuristic labels and preprocessing limitations that shape how its results should be interpreted.
+**Built with:** Python · MiniLM · Autoencoders
 
-**Built with:** Python · MiniLM · LDA · Autoencoders · Logistic regression · JavaScript
-
-[Source & research notes ↗](https://github.com/SOLANKYYY/tracelens-sysmon-lab)
-
----
+[Explore the project ↗](https://github.com/SOLANKYYY/tracelens-sysmon-lab)
 
 ### 05 / VeraGate Face Lab
-**Making face-recognition thresholds understandable**
 
-An interactive explanation of dual-threshold recognition decisions, enrollment steps, and boundary cases. It connects a browser-based threshold simulator with the workflow of an original Python and OpenCV LBPH prototype.
+Face-recognition threshold experiments.
 
-The browser lab lets visitors investigate how thresholds affect decisions. Recognition belongs to the Python prototype; the website illustrates its decision logic.
+**Built with:** Python · OpenCV · JavaScript
 
-**Built with:** Python · OpenCV LBPH · Haar cascades · HTML · CSS · JavaScript
-
-[Source & interactive lab ↗](https://github.com/SOLANKYYY/veragate-face-lab)
-
----
+[Explore the project ↗](https://github.com/SOLANKYYY/veragate-face-lab)
 
 ### 06 / LungLens
-**An educational imaging and inference workspace**
 
-An imaging dashboard with a local Python inference API, a reproducible NumPy baseline, and documented training and evaluation workflows.
+Educational imaging & synthetic patterns.
 
-The included baseline learns synthetic visual patterns. That makes it useful for exploring the application and inference pipeline while keeping its scope clear: it is an educational prototype, not a trained lung-cancer classifier.
+**Built with:** Python · NumPy · Pillow
 
-**Built with:** Python · NumPy · Pillow · HTML · CSS · JavaScript
-
-[Source & model workflow ↗](https://github.com/SOLANKYYY/lunglens)
+[Explore the project ↗](https://github.com/SOLANKYYY/lunglens)
 
 <details>
 <summary><strong>More experiments to explore</strong></summary>
