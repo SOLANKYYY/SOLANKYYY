@@ -135,12 +135,6 @@ Alongside those experiments, I’m strengthening the foundations that make them 
 
 <br>
 
-## The contribution trail
-
-Small iterations add up. [Explore my contribution activity on GitHub](https://github.com/SOLANKYYY?tab=overview), or see the animated trail in the [visual profile](ReadMe.md).
-
-<br>
-
 ## Let's connect
 
 I'm interested in collaborating on **applied ML experiments, computer-vision prototypes, useful web applications, and open-source improvements**. I enjoy projects with a clear problem to investigate and room to learn through building.
