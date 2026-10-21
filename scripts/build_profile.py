@@ -1,4 +1,4 @@
-"""Build the profile's theme-aware SVG assets from PROFILE.md.
+"""Build the profile's light-background SVG assets from PROFILE.md.
 
 Requires Pillow, fontTools, and the Windows Georgia Italic and Arial fonts.
 The supplied portrait is embedded unchanged; motion is limited to status dots.
@@ -20,11 +20,12 @@ GLYPHS = FONT.getGlyphSet()
 CMAP = FONT.getBestCmap()
 UPM = FONT['head'].unitsPerEm
 PHOTO = base64.b64encode((ROOT / 'assets/profile-photo.jpg').read_bytes()).decode()
-PALETTES = [('var(--surface)','var(--accent)','var(--line)')]*4
+PALETTES = [(bg,'var(--accent)','var(--line)') for bg in
+            ('#eef7ff', '#f4efff', '#fff1e8', '#ecf8f1')]
+ASSET_VERSION = 'light-1'
 INK = 'var(--ink)'
 CSS = '''
-  :root{--ink:#233d45;--accent:#356b77;--secondary:#8a6c47;--line:#d7e2e4;--surface:#fbfcfc;--tint:#eef4f4;--header-start:#fbf9f5;--header-end:#eaf1ef;--status:#25834c}
-  @media(prefers-color-scheme:dark){:root{--ink:#dce8ec;--accent:#91cbd2;--secondary:#cdb184;--line:#354a54;--surface:#142129;--tint:#20343d;--header-start:#19232b;--header-end:#193334;--status:#7bdc9c}}
+  :root{--ink:#233d45;--accent:#356b77;--secondary:#8a6c47;--line:#d7e2e4;--surface:#fbfcfc;--tint:#eef4f4;--header-start:#f1eaff;--header-middle:#fff1e8;--header-end:#edf8ff;--status:#25834c}
   .pulse{transform-box:fill-box;transform-origin:center;animation:pulse 3s ease-out infinite}
   @keyframes pulse{0%{transform:scale(1);opacity:.45}80%,100%{transform:scale(2.1);opacity:0}}
   @media(prefers-reduced-motion:reduce){.pulse{animation:none;opacity:.15}}
@@ -71,7 +72,8 @@ def wrap(s,width,size):
 
 def base(w,h,palette,title,body,frame=False):
     bg,accent,border=palette
-    surface=f'<rect x="1" y="1" width="{w-2}" height="{h-2}" rx="14" fill="{bg}" stroke="{border}"/>' if frame else ''
+    surface=(f'<rect x="1" y="1" width="{w-2}" height="{h-2}" rx="14" fill="{bg}" stroke="{border}"/>'
+             if frame else f'<rect width="{w}" height="{h}" fill="{bg}"/>')
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-labelledby="title desc">
 <title id="title">{escape(title)}</title><desc id="desc">{escape(title)}. Full text is available in PROFILE.md.</desc>
 <style>{CSS}</style><defs><clipPath id="frame"><rect width="{w}" height="{h}" rx="14"/></clipPath></defs>
@@ -112,7 +114,7 @@ def hero():
         scale=r/140*.625
         imgx,imgy=cx-464*scale,cy-585.6*scale
         parts=[f"""<defs>
-<linearGradient id="wash" x2="1" y2="1"><stop stop-color="var(--header-start)"/><stop offset="1" stop-color="var(--header-end)"/></linearGradient>
+<linearGradient id="wash" x2="1" y2="1"><stop stop-color="var(--header-start)"/><stop offset=".5" stop-color="var(--header-middle)"/><stop offset="1" stop-color="var(--header-end)"/></linearGradient>
 <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="var(--line)" stroke-width=".5"/></pattern>
 <clipPath id="portrait"><circle cx="{cx}" cy="{cy}" r="{r}"/></clipPath></defs>
 <rect width="{w}" height="{h}" fill="url(#wash)"/>
@@ -214,12 +216,12 @@ for i,(slug,label,_) in enumerate(contacts):
     (OUT/(slug+'.svg')).write_text(base(180,48,PALETTES[i],label,text(label,90,31,17,PALETTES[i][1],600,'middle'),frame=True),encoding='utf-8')
 
 def picture(name,alt,link=None):
-    pic=f'<picture>\n  <source media="(max-width: 600px)" srcset="assets/studio/{name}-mobile.svg">\n  <img src="assets/studio/{name}.svg" width="100%" alt="{escape(alt,quote=True)}">\n</picture>'
+    pic=f'<picture>\n  <source media="(max-width: 600px)" srcset="assets/studio/{name}-mobile.svg?v={ASSET_VERSION}">\n  <img src="assets/studio/{name}.svg?v={ASSET_VERSION}" width="100%" alt="{escape(alt,quote=True)}">\n</picture>'
     if link:pic=f'<a href="{link}">\n{pic}\n</a>'
     return pic+'\n\n'
 
 def contact_row():
-    return '<p align="center">\n'+'\n'.join(f'  <a href="{url}"><img src="assets/studio/{slug}.svg" width="130" alt="{label}"></a>' for slug,label,url in contacts)+'\n</p>\n\n'
+    return '<p align="center">\n'+'\n'.join(f'  <a href="{url}"><img src="assets/studio/{slug}.svg?v={ASSET_VERSION}" width="130" alt="{label}"></a>' for slug,label,url in contacts)+'\n</p>\n\n'
 
 md=picture('hero','Om Solanki. AI/ML student in Bengaluru, India. Open to collaboration. Portrait with a green status dot.')
 md+=contact_row()
@@ -228,7 +230,7 @@ md+=picture('about','About Om: AI/ML student at Jain University, working across 
 md+=picture('focus','Focus: applied machine learning, computer vision, and software interfaces.')
 md+='<p align="center">\n'
 for i,(title,link,subtitle) in enumerate(projects):
-    md+=f'  <a href="{link}"><img src="assets/studio/project-card-{i+1}.svg" width="410" alt="{escape(title+": "+subtitle,quote=True)}"></a>\n'
+    md+=f'  <a href="{link}"><img src="assets/studio/project-card-{i+1}.svg?v={ASSET_VERSION}" width="410" alt="{escape(title+": "+subtitle,quote=True)}"></a>\n'
 md+='</p>\n\n'
 md+='<details>\n<summary><strong>More experiments to explore</strong></summary>\n\n'
 md+=section('Selected projects').split('<details>',1)[1].split('<br>',1)[1].split('</details>')[0].strip()+'\n\n</details>\n\n'
@@ -237,4 +239,4 @@ for name,alt in [('toolkit','Technical toolkit: languages, machine learning, vis
 md+='<p align="center"><a href="https://github.com/SOLANKYYY?tab=repositories">Browse all repositories ↗</a></p>\n\n'
 md+=picture('connect','Open to collaboration on applied AI, computer vision, useful web tools, and open-source improvements.')+contact_row()+picture('footer','Keep learning. Keep building.')
 (ROOT/'ReadMe.md').write_text(md.rstrip()+'\n',encoding='utf-8')
-print(f'Built {len(list(OUT.glob("*.svg")))} theme-aware SVG assets and the visual README.')
+print(f'Built {len(list(OUT.glob("*.svg")))} light-background SVG assets and the visual README.')

@@ -1,14 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="410" viewBox="0 0 960 410" role="img" aria-labelledby="title desc">
 <title id="title">Om Solanki — ideas, made useful</title><desc id="desc">Om Solanki — ideas, made useful. Full text is available in PROFILE.md.</desc>
 <style>
-  :root{--ink:#233d45;--accent:#356b77;--secondary:#8a6c47;--line:#d7e2e4;--surface:#fbfcfc;--tint:#eef4f4;--header-start:#fbf9f5;--header-end:#eaf1ef;--status:#25834c}
-  @media(prefers-color-scheme:dark){:root{--ink:#dce8ec;--accent:#91cbd2;--secondary:#cdb184;--line:#354a54;--surface:#142129;--tint:#20343d;--header-start:#19232b;--header-end:#193334;--status:#7bdc9c}}
+  :root{--ink:#233d45;--accent:#356b77;--secondary:#8a6c47;--line:#d7e2e4;--surface:#fbfcfc;--tint:#eef4f4;--header-start:#f1eaff;--header-middle:#fff1e8;--header-end:#edf8ff;--status:#25834c}
   .pulse{transform-box:fill-box;transform-origin:center;animation:pulse 3s ease-out infinite}
   @keyframes pulse{0%{transform:scale(1);opacity:.45}80%,100%{transform:scale(2.1);opacity:0}}
   @media(prefers-reduced-motion:reduce){.pulse{animation:none;opacity:.15}}
 </style><defs><clipPath id="frame"><rect width="960" height="410" rx="14"/></clipPath></defs>
-<g clip-path="url(#frame)"><defs>
-<linearGradient id="wash" x2="1" y2="1"><stop stop-color="var(--header-start)"/><stop offset="1" stop-color="var(--header-end)"/></linearGradient>
+<g clip-path="url(#frame)"><rect width="960" height="410" fill="#eef7ff"/><defs>
+<linearGradient id="wash" x2="1" y2="1"><stop stop-color="var(--header-start)"/><stop offset=".5" stop-color="var(--header-middle)"/><stop offset="1" stop-color="var(--header-end)"/></linearGradient>
 <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="var(--line)" stroke-width=".5"/></pattern>
 <clipPath id="portrait"><circle cx="760" cy="186" r="106"/></clipPath></defs>
 <rect width="960" height="410" fill="url(#wash)"/>
