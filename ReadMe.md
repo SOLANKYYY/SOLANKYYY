@@ -1,7 +1,7 @@
 <h1>
   <picture>
-    <source media="(max-width: 760px)" srcset="https://raw.githubusercontent.com/SOLANKYYY/SOLANKYYY/main/assets/studio/hero-mobile.svg?v=dusk-1">
-    <img src="https://raw.githubusercontent.com/SOLANKYYY/SOLANKYYY/main/assets/studio/hero.svg?v=dusk-1" width="100%" alt="Om Solanki, a computer science and AI/ML undergraduate in Bengaluru. In his illustrated studio the lettering cycles through computer vision, language models and full-stack apps.">
+    <source media="(max-width: 760px)" srcset="https://raw.githubusercontent.com/SOLANKYYY/SOLANKYYY/main/assets/studio/hero-mobile.svg?v=portrait-2">
+    <img src="https://raw.githubusercontent.com/SOLANKYYY/SOLANKYYY/main/assets/studio/hero.svg?v=portrait-2" width="100%" alt="An illustrated portrait of Om Solanki, a computer science and AI/ML undergraduate in Bengaluru. In his studio the lettering cycles through computer vision, language models and full-stack apps.">
   </picture>
 </h1>
 

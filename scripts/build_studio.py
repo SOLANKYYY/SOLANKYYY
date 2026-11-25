@@ -17,12 +17,10 @@ def jpeg_uri(content):
 
 
 def portrait_uri():
-    with Image.open(ROOT / "assets" / "profile-photo.jpg") as original:
-        # Frame the same public portrait used in the original profile design.
-        portrait = original.crop((319, 366, 667, 714)).convert("RGB")
-        portrait.thumbnail((160, 160), Image.Resampling.LANCZOS)
+    with Image.open(ROOT / "assets" / "profile-avatar.jpg") as portrait:
+        portrait.thumbnail((240, 240), Image.Resampling.LANCZOS)
         output = BytesIO()
-        portrait.save(output, format="JPEG", quality=88, optimize=True)
+        portrait.save(output, format="JPEG", quality=90, optimize=True)
     return jpeg_uri(output.getvalue())
 
 
@@ -31,7 +29,7 @@ def banner(mobile, art, portrait):
         width, height = 480, 392
         view, frame = "730 0 1442 724", 'width="480" height="196"'
         shade = '<rect y="196" width="480" height="196" fill="#211c39"/><rect y="188" width="480" height="9" fill="url(#edge)"/>'
-        photo_x, photo_y, diameter, identity_x, handle_y = 24, 171, 54, 91, 209
+        photo_x, photo_y, diameter, identity_x, handle_y = 24, 148, 80, 123, 212
         name_x, name_y, name_size = 22, 287, 70
         line_x, line_y, line_size = 27, 323, 20
         role_y, role_size, role_length = 361, 21, 190
@@ -41,7 +39,7 @@ def banner(mobile, art, portrait):
         width, height = 1200, 416
         view, frame = ART_SPACE, 'width="1200" height="416"'
         shade = '<rect width="805" height="416" fill="url(#wall)"/>'
-        photo_x, photo_y, diameter, identity_x, handle_y = 48, 47, 64, 129, 73
+        photo_x, photo_y, diameter, identity_x, handle_y = 48, 25, 108, 177, 73
         name_x, name_y, name_size = 45, 233, 100
         line_x, line_y, line_size = 52, 283, 25
         role_y, role_size, role_length = 341, 24, 219
@@ -58,7 +56,7 @@ def banner(mobile, art, portrait):
     portrait_cx, portrait_cy = photo_x + diameter / 2, photo_y + diameter / 2
     return f'''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 {width} {height}" width="{width}" height="{height}" role="img" aria-labelledby="title desc">
   <title id="title">Om Solanki · Computer science and AI/ML</title>
-  <desc id="desc">Om’s portrait beside an illustrated Bengaluru studio at dusk. A scan line crosses a retinal image and the lettering cycles through computer vision, language models and full-stack apps.</desc>
+  <desc id="desc">An illustrated portrait of Om against violet beside his Bengaluru studio at dusk. A scan line crosses a retinal image and the lettering cycles through computer vision, language models and full-stack apps.</desc>
   <defs>
     <clipPath id="frame"><rect width="{width}" height="{height}" rx="20"/></clipPath>
     <clipPath id="portrait"><circle cx="{portrait_cx:g}" cy="{portrait_cy:g}" r="{diameter/2:g}"/></clipPath>
@@ -87,7 +85,7 @@ def banner(mobile, art, portrait):
       <g clip-path="url(#screen)"><g class="sweep" opacity="0"><rect x="1356" y="301" width="456" height="42" fill="url(#light)"/><path d="M1356 343h456" stroke="#ffe3bc" stroke-width="3"/></g></g>
     </svg>
     {shade}
-    <circle cx="{portrait_cx:g}" cy="{portrait_cy:g}" r="{diameter/2+3:g}" fill="#ffe3ba"/>
+    <circle cx="{portrait_cx:g}" cy="{portrait_cy:g}" r="{diameter/2+2:g}" fill="#ffe3ba"/>
     <image x="{photo_x}" y="{photo_y}" width="{diameter}" height="{diameter}" clip-path="url(#portrait)" xlink:href="{portrait}"/>
     <text class="mono" x="{identity_x}" y="{handle_y}" font-size="{handle_size}" font-weight="bold" letter-spacing="1.7" fill="#ffdfb7">@SOLANKYYY</text>
     {location}
