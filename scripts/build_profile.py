@@ -1,8 +1,8 @@
 """Regenerate the archived pastel panels from PROFILE.md.
 
-The current ReadMe.md, FIELDNOTES.md and the two project-diagram SVGs are
-authored directly. Rebuilding these archived panels requires Pillow, fontTools
-and the Windows Georgia Italic and Arial fonts.
+The active profile uses build_studio.py for its illustrations and
+update_github_stats.py for statistics. These archived panels require Pillow,
+fontTools and the Windows Georgia Italic and Arial fonts.
 """
 from pathlib import Path
 from html import escape

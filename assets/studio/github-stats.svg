@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 269" width="1000" height="269" role="img" aria-labelledby="t d">
+<title id="t">GitHub stats for Om Solanki</title>
+<desc id="d">22 public repositories, 10 stars received, 1 fork received. Repositories by primary language — HTML 8, Python 5, JavaScript 3, Jupyter Notebook 2, TypeScript 2, Java 1, MATLAB 1.</desc>
+<rect width="1000" height="269" rx="17" fill="#211d35"/>
+<text x="32" y="74" font-family="Georgia,serif" font-size="58" font-weight="700" fill="#ffcca8">22</text>
+<text x="32" y="100" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#f5eefa">Public repositories</text>
+<text x="272" y="74" font-family="Georgia,serif" font-size="58" font-weight="700" fill="#c8b6ff">10</text>
+<text x="272" y="100" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#f5eefa">Stars received</text>
+<text x="512" y="74" font-family="Georgia,serif" font-size="58" font-weight="700" fill="#9debd5">1</text>
+<text x="512" y="100" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#f5eefa">Forks received</text>
+<text x="752" y="74" font-family="Georgia,serif" font-size="58" font-weight="700" fill="#ffc1e0">7</text>
+<text x="752" y="100" font-family="Arial,sans-serif" font-size="18" font-weight="400" fill="#f5eefa">Primary languages</text>
+<path d="M32 121H968" stroke="#4e4664"/>
+<text x="32" y="151" font-family="Arial,sans-serif" font-size="20" font-weight="600" fill="#f3edf9">Primary language by public repository</text>
+<defs><clipPath id="bar"><rect x="32" y="164" width="936" height="12" rx="6"/></clipPath></defs><g clip-path="url(#bar)">
+<rect x="32.00" y="164" width="340.41" height="12" fill="#ff9c81"/>
+<rect x="372.36" y="164" width="212.78" height="12" fill="#86c9ff"/>
+<rect x="585.09" y="164" width="127.69" height="12" fill="#f5d76b"/>
+<rect x="712.73" y="164" width="85.14" height="12" fill="#efb3ec"/>
+<rect x="797.82" y="164" width="85.14" height="12" fill="#77e1d1"/>
+<rect x="882.91" y="164" width="42.60" height="12" fill="#c3afff"/>
+<rect x="925.45" y="164" width="42.60" height="12" fill="#ffbc79"/>
+</g>
+<rect x="32" y="195" width="9" height="9" rx="2" fill="#ff9c81"/>
+<text x="49" y="205" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#efe9f7">HTML · 8</text>
+<rect x="272" y="195" width="9" height="9" rx="2" fill="#86c9ff"/>
+<text x="289" y="205" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#efe9f7">Python · 5</text>
+<rect x="512" y="195" width="9" height="9" rx="2" fill="#f5d76b"/>
+<text x="529" y="205" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#efe9f7">JavaScript · 3</text>
+<rect x="752" y="195" width="9" height="9" rx="2" fill="#efb3ec"/>
+<text x="769" y="205" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#efe9f7">Jupyter Notebook · 2</text>
+<rect x="32" y="221" width="9" height="9" rx="2" fill="#77e1d1"/>
+<text x="49" y="231" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#efe9f7">TypeScript · 2</text>
+<rect x="272" y="221" width="9" height="9" rx="2" fill="#c3afff"/>
+<text x="289" y="231" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#efe9f7">Java · 1</text>
+<rect x="512" y="221" width="9" height="9" rx="2" fill="#ffbc79"/>
+<text x="529" y="231" font-family="Arial,sans-serif" font-size="16" font-weight="400" fill="#efe9f7">MATLAB · 1</text>
+</svg>

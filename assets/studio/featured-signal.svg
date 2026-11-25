@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 226" width="360" height="226" role="img" aria-labelledby="t d">
+  <title id="t">Signal Desk</title><desc id="d">Trace an answer back to the threat report it cites.</desc>
+  <defs><clipPath id="card"><rect width="360" height="226" rx="16"/></clipPath>
+  <pattern id="dots" width="9" height="9" patternUnits="userSpaceOnUse"><rect x="1" y="1" width="1.3" height="1.3" fill="#a89ac9"/></pattern></defs>
+  <g clip-path="url(#card)">
+    <rect width="360" height="226" fill="#eadffb"/><rect width="360" height="98" fill="#352549"/>
+    <rect width="360" height="98" fill="url(#dots)" opacity=".45"/>
+    <g transform="translate(180 12) scale(1.1)"><g stroke-linejoin="miter" stroke-width="2">
+  <path d="M-44 12h48v5h6v45h-54z" fill="#74639f" stroke="#aa99d7"/>
+  <path d="M-31 5h48v5h6v47h-54z" fill="#b29adc" stroke="#ceb4ed"/>
+  <path d="M-16 0h44v10h10v45h-54z" fill="#ffeac6" stroke="#fff4d9"/>
+  <path d="M28 0v10h10" fill="none" stroke="#aa79a1"/>
+  <path d="M-7 16h29m-29 8h23m-23 8H9" fill="none" stroke="#a86e8e" stroke-width="3"/>
+  <path d="M15 38h6v-4h14v4h6v13h-6v4H21v-4h-6z" fill="#543e77" stroke="#a5ead8"/>
+  <path d="m37 52 13 12" stroke="#a5ead8" stroke-width="7"/>
+</g></g>
+    <path d="M326 22h12v12m0-12-13 13" fill="none" stroke="#eadffb" stroke-width="2.5"/>
+    <text x="20" y="140" font-family="Georgia,'Liberation Serif',serif" font-size="36" font-weight="bold" fill="#332244">Signal Desk</text>
+    <text x="22" y="174" font-family="Arial,sans-serif" font-size="21" fill="#332244"><tspan x="22">Trace an answer back to</tspan><tspan x="22" dy="26">the threat report it cites.</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 226" width="360" height="226" role="img" aria-labelledby="t d">
+  <title id="t">RetinaBridge</title><desc id="d">Inspect a heatmap beside the original retinal image.</desc>
+  <defs><clipPath id="card"><rect width="360" height="226" rx="16"/></clipPath>
+  <pattern id="dots" width="9" height="9" patternUnits="userSpaceOnUse"><rect x="1" y="1" width="1.3" height="1.3" fill="#cb9cac"/></pattern></defs>
+  <g clip-path="url(#card)">
+    <rect width="360" height="226" fill="#ffe3db"/><rect width="360" height="98" fill="#452b41"/>
+    <rect width="360" height="98" fill="url(#dots)" opacity=".45"/>
+    <g transform="translate(180 12) scale(1.1)"><g>
+  <path d="M-25 2h48v4h9v5h8v7h6v9h3v13h-3v8h-6v7h-8v5h-9v4h-48v-4h-9v-5h-7v-7h-5v-8h-3V27h3v-9h5v-7h7V6h9z" fill="#f88677"/>
+  <path d="M-21 7h42v4h9v4h7v5h-6v-4H13v-3H-8v4h-15v8h-11V14h13z" fill="#ffb185"/>
+  <path d="M-38 42h10v7h15v5h29v-4h16v-6h9v5h-7v6h-8v5h-9v3h-39v-4h-9v-6h-7z" fill="#d96272"/>
+  <g fill="none" stroke="#a34b69" stroke-width="2.5" stroke-linecap="square">
+    <path d="m14 31-19-4-15-12-12-1m27 13-9-2-12 6-15 3M14 31 2 42l-14 3-13 9m32-17 1 11-4 7"/>
+    <path d="m13 31 3-13 8-8m-9 13-10-8-8-2m17 18 14 7 9 7"/>
+  </g><path d="M10 24h9v3h4v8h-4v3h-9v-3H7v-8h3z" fill="#ffe5a4"/>
+</g></g>
+    <path d="M326 22h12v12m0-12-13 13" fill="none" stroke="#ffe3db" stroke-width="2.5"/>
+    <text x="20" y="140" font-family="Georgia,'Liberation Serif',serif" font-size="36" font-weight="bold" fill="#4a2036">RetinaBridge</text>
+    <text x="22" y="174" font-family="Arial,sans-serif" font-size="21" fill="#4a2036"><tspan x="22">Inspect a heatmap beside</tspan><tspan x="22" dy="26">the original retinal image.</tspan></text>
+  </g>
+</svg>
