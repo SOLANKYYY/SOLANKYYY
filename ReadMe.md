@@ -26,6 +26,12 @@ My field notes take you inside each build. [Follow a Signal Desk citation](https
 
 ## GitHub stats
 
+<p>
+  <a href="https://github.com/SOLANKYYY?tab=followers"><img src="https://img.shields.io/github/followers/SOLANKYYY?style=flat-square&amp;label=Followers&amp;labelColor=3c3353&amp;color=b9a9f9" alt="Current GitHub follower count"></a>
+  <a href="https://github.com/SOLANKYYY?tab=repositories"><img src="https://img.shields.io/github/stars/SOLANKYYY?affiliations=OWNER&amp;style=flat-square&amp;label=Stars%20received&amp;labelColor=3c3353&amp;color=ffbd94" alt="Current stars received by my public repositories"></a>
+  <a href="https://github.com/SOLANKYYY#js-contribution-activity-description"><img src="https://img.shields.io/badge/dynamic/regex?url=https%3A%2F%2Fgithub.com%2Fusers%2FSOLANKYYY%2Fcontributions&amp;search=%28%5B0-9%5D%5B0-9%2C%5D*%29%5Cs%2Bcontributions%3F%5Cs%2Bin%5Cs%2Bthe%5Cs%2Blast%5Cs%2Byear&amp;replace=%241&amp;style=flat-square&amp;label=Contributions%20%2812%20mo%29&amp;labelColor=3c3353&amp;color=a5e5d1" alt="Contributions on the public GitHub calendar over the past 12 months"></a>
+</p>
+
 <!-- github-stats:start -->
 
 <picture>
