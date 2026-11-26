@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="870" viewBox="0 0 390 870" role="img" aria-labelledby="title desc">
+<title id="title">Om Solanki’s GitHub activity</title>
+<desc id="desc">Through 2026-11-25 UTC. Current streak 2 days, longest streak 7 days. 67 authored commits in 30 days across 22 public repositories. Activity in 11 of the last 12 complete weeks, on 44 of 84 days.</desc>
+<defs><linearGradient id="commit-ink" x1="0" y1="1" x2="0" y2="0" gradientUnits="objectBoundingBox"><stop stop-color="#76a3eb"/><stop offset="1" stop-color="#91eafa"/></linearGradient></defs>
+<g transform="translate(0 0)">
+<rect x=".5" y=".5" width="389" height="281" rx="17" fill="#392637" stroke="#6a4056"/>
+<text x="21" y="37" fill="#fff9f0" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" text-anchor="start">Contribution streaks</text>
+<text x="22" y="59" fill="#f6d9dd" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="start">Consecutive days on GitHub</text>
+<text x="22" y="121" fill="#ffbd87" font-family="Georgia, 'Times New Roman', serif" font-size="57" font-weight="700" text-anchor="start">2</text>
+<text x="22" y="143" fill="#f6d9dd" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="start">Current streak</text>
+<text x="196" y="121" fill="#ff9bb4" font-family="Georgia, 'Times New Roman', serif" font-size="57" font-weight="700" text-anchor="start">7</text>
+<text x="196" y="143" fill="#f6d9dd" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="start">Longest streak</text>
+<text x="22" y="175" fill="#f6d9dd" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" text-anchor="start">Last 14 days</text>
+<text x="368" y="175" fill="#f6d9dd" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="end">Active day</text>
+<rect x="299" y="166" width="8" height="8" rx="3" fill="#ffbd87"/>
+<g><title>2026-11-12 · 0 contributions</title><rect x="22" y="187" width="21.7143" height="13" rx="4" fill="#684956"/></g>
+<g><title>2026-11-13 · 7 contributions</title><rect x="46.7143" y="187" width="21.7143" height="13" rx="4" fill="#ffbd87"/></g>
+<g><title>2026-11-14 · 4 contributions</title><rect x="71.4286" y="187" width="21.7143" height="13" rx="4" fill="#ffbd87"/></g>
+<g><title>2026-11-15 · 9 contributions</title><rect x="96.1429" y="187" width="21.7143" height="13" rx="4" fill="#ffbd87"/></g>
+<g><title>2026-11-16 · 4 contributions</title><rect x="120.857" y="187" width="21.7143" height="13" rx="4" fill="#ffbd87"/></g>
+<g><title>2026-11-17 · 3 contributions</title><rect x="145.571" y="187" width="21.7143" height="13" rx="4" fill="#ffbd87"/></g>
+<g><title>2026-11-18 · 3 contributions</title><rect x="170.286" y="187" width="21.7143" height="13" rx="4" fill="#ffbd87"/></g>
+<g><title>2026-11-19 · 3 contributions</title><rect x="195" y="187" width="21.7143" height="13" rx="4" fill="#ffbd87"/></g>
+<g><title>2026-11-20 · 0 contributions</title><rect x="219.714" y="187" width="21.7143" height="13" rx="4" fill="#684956"/></g>
+<g><title>2026-11-21 · 2 contributions</title><rect x="244.429" y="187" width="21.7143" height="13" rx="4" fill="#ffbd87"/></g>
+<g><title>2026-11-22 · 0 contributions</title><rect x="269.143" y="187" width="21.7143" height="13" rx="4" fill="#684956"/></g>
+<g><title>2026-11-23 · 0 contributions</title><rect x="293.857" y="187" width="21.7143" height="13" rx="4" fill="#684956"/></g>
+<g><title>2026-11-24 · 1 contributions</title><rect x="318.571" y="187" width="21.7143" height="13" rx="4" fill="#ffbd87"/></g>
+<g><title>2026-11-25 · 10 contributions</title><rect x="343.286" y="187" width="21.7143" height="13" rx="4" fill="#ffbd87"/></g>
+<text x="22" y="221" fill="#f6d9dd" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="start">Nov 12</text>
+<text x="368" y="221" fill="#f6d9dd" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="end">Nov 25</text>
+<rect x="22" y="239" width="346" height="1" rx="0" fill="#69465b"/>
+<text x="22" y="262" fill="#ff9bb4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="start">Best run · Aug 27 – Sep 2, 2026</text>
+</g>
+<g transform="translate(0 294)">
+<rect x=".5" y=".5" width="389" height="281" rx="17" fill="#152e45" stroke="#31566e"/>
+<text x="21" y="37" fill="#fff9f0" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" text-anchor="start">Daily commits</text>
+<text x="22" y="59" fill="#d3e7f7" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="start">Authored on public default branches</text>
+<text x="22" y="121" fill="#9cdeff" font-family="Georgia, 'Times New Roman', serif" font-size="57" font-weight="700" text-anchor="start">67</text>
+<text x="22" y="143" fill="#d3e7f7" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="start">Commits in 30 days</text>
+<text x="369" y="136" fill="#c5b8ff" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="end">Peak day · 14</text>
+<text x="37" y="168" fill="#d3e7f7" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="end">14</text>
+<rect x="43" y="164" width="325" height="1" rx="0" fill="#476579"/>
+<text x="37" y="219" fill="#d3e7f7" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="end">0</text>
+<rect x="43" y="215" width="325" height="1" rx="0" fill="#476579"/>
+<g><title>2026-10-27 · 8 authored commits</title><rect x="44" y="185.857" width="8.83333" height="29.1429" rx="1.5" fill="url(#commit-ink)"/></g>
+<g><title>2026-10-28 · 1 authored commits</title><rect x="54.8333" y="211.357" width="8.83333" height="3.64286" rx="1.5" fill="url(#commit-ink)"/></g>
+<g><title>2026-10-29 · 0 authored commits</title><rect x="65.6667" y="213" width="8.83333" height="2" rx="1.5" fill="#496b80"/></g>
+<g><title>2026-10-30 · 0 authored commits</title><rect x="76.5" y="213" width="8.83333" height="2" rx="1.5" fill="#496b80"/></g>
+<g><title>2026-10-31 · 1 authored commits</title><rect x="87.3333" y="211.357" width="8.83333" height="3.64286" rx="1.5" fill="url(#commit-ink)"/></g>
+<g><title>2026-11-01 · 0 authored commits</title><rect x="98.1667" y="213" width="8.83333" height="2" rx="1.5" fill="#496b80"/></g>
+<g><title>2026-11-02 · 0 authored commits</title><rect x="109" y="213" width="8.83333" height="2" rx="1.5" fill="#496b80"/></g>
+<g><title>2026-11-03 · 0 authored commits</title><rect x="119.833" y="213" width="8.83333" height="2" rx="1.5" fill="#496b80"/></g>
+<g><title>2026-11-04 · 0 authored commits</title><rect x="130.667" y="213" width="8.83333" height="2" rx="1.5" fill="#496b80"/></g>
+<g><title>2026-11-05 · 0 authored commits</title><rect x="141.5" y="213" width="8.83333" height="2" rx="1.5" fill="#496b80"/></g>
+<g><title>2026-11-06 · 0 authored commits</title><rect x="152.333" y="213" width="8.83333" height="2" rx="1.5" fill="#496b80"/></g>
+<g><title>2026-11-07 · 0 authored commits</title><rect x="163.167" y="213" width="8.83333" height="2" rx="1.5" fill="#496b80"/></g>
+<g><title>2026-11-08 · 0 authored commits</title><rect x="174" y="213" width="8.83333" height="2" rx="1.5" fill="#496b80"/></g>
+<g><title>2026-11-09 · 0 authored commits</title><rect x="184.833" y="213" width="8.83333" height="2" rx="1.5" fill="#496b80"/></g>
+<g><title>2026-11-10 · 14 authored commits</title><rect x="195.667" y="164" width="8.83333" height="51" rx="1.5" fill="#c4aaff"/></g>
+<g><title>2026-11-11 · 0 authored commits</title><rect x="206.5" y="213" width="8.83333" height="2" rx="1.5" fill="#496b80"/></g>
+<g><title>2026-11-12 · 0 authored commits</title><rect x="217.333" y="213" width="8.83333" height="2" rx="1.5" fill="#496b80"/></g>
+<g><title>2026-11-13 · 8 authored commits</title><rect x="228.167" y="185.857" width="8.83333" height="29.1429" rx="1.5" fill="url(#commit-ink)"/></g>
+<g><title>2026-11-14 · 5 authored commits</title><rect x="239" y="196.786" width="8.83333" height="18.2143" rx="1.5" fill="url(#commit-ink)"/></g>
+<g><title>2026-11-15 · 10 authored commits</title><rect x="249.833" y="178.571" width="8.83333" height="36.4286" rx="1.5" fill="url(#commit-ink)"/></g>
+<g><title>2026-11-16 · 2 authored commits</title><rect x="260.667" y="207.714" width="8.83333" height="7.28571" rx="1.5" fill="url(#commit-ink)"/></g>
+<g><title>2026-11-17 · 2 authored commits</title><rect x="271.5" y="207.714" width="8.83333" height="7.28571" rx="1.5" fill="url(#commit-ink)"/></g>
+<g><title>2026-11-18 · 6 authored commits</title><rect x="282.333" y="193.143" width="8.83333" height="21.8571" rx="1.5" fill="url(#commit-ink)"/></g>
+<g><title>2026-11-19 · 0 authored commits</title><rect x="293.167" y="213" width="8.83333" height="2" rx="1.5" fill="#496b80"/></g>
+<g><title>2026-11-20 · 0 authored commits</title><rect x="304" y="213" width="8.83333" height="2" rx="1.5" fill="#496b80"/></g>
+<g><title>2026-11-21 · 0 authored commits</title><rect x="314.833" y="213" width="8.83333" height="2" rx="1.5" fill="#496b80"/></g>
+<g><title>2026-11-22 · 0 authored commits</title><rect x="325.667" y="213" width="8.83333" height="2" rx="1.5" fill="#496b80"/></g>
+<g><title>2026-11-23 · 0 authored commits</title><rect x="336.5" y="213" width="8.83333" height="2" rx="1.5" fill="#496b80"/></g>
+<g><title>2026-11-24 · 5 authored commits</title><rect x="347.333" y="196.786" width="8.83333" height="18.2143" rx="1.5" fill="url(#commit-ink)"/></g>
+<g><title>2026-11-25 · 5 authored commits</title><rect x="358.167" y="196.786" width="8.83333" height="18.2143" rx="1.5" fill="url(#commit-ink)"/></g>
+<text x="43" y="232" fill="#d3e7f7" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="start">Oct 27</text>
+<text x="368" y="232" fill="#d3e7f7" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="end">Nov 25</text>
+<rect x="22" y="239" width="346" height="1" rx="0" fill="#36556d"/>
+<text x="22" y="262" fill="#9cdeff" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="start">Across 22 public repositories · UTC</text>
+</g>
+<g transform="translate(0 588)">
+<rect x=".5" y=".5" width="389" height="281" rx="17" fill="#173b35" stroke="#376458"/>
+<text x="21" y="37" fill="#fff9f0" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" text-anchor="start">Weekly consistency</text>
+<text x="22" y="59" fill="#d7eee8" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="start">Last 12 complete weeks</text>
+<text x="22" y="121" fill="#b9efb4" font-family="Georgia, 'Times New Roman', serif" font-size="51" font-weight="700" text-anchor="start">11 / 12</text>
+<text x="22" y="143" fill="#d7eee8" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="start">Weeks with a contribution</text>
+<text x="46" y="164" fill="#d7eee8" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" text-anchor="end">Mon</text>
+<text x="46" y="191" fill="#d7eee8" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" text-anchor="end">Thu</text>
+<text x="46" y="218" fill="#d7eee8" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" text-anchor="end">Sun</text>
+<g><title>2026-08-31 · 3 contributions</title><rect x="53" y="157" width="23" height="7" rx="2" fill="#70bc9f"/></g>
+<g><title>2026-09-01 · 1 contributions</title><rect x="53" y="166" width="23" height="7" rx="2" fill="#70bc9f"/></g>
+<g><title>2026-09-02 · 10 contributions</title><rect x="53" y="175" width="23" height="7" rx="2" fill="#e2f594"/></g>
+<g><title>2026-09-03 · 0 contributions</title><rect x="53" y="184" width="23" height="7" rx="2" fill="#30574f"/></g>
+<g><title>2026-09-04 · 0 contributions</title><rect x="53" y="193" width="23" height="7" rx="2" fill="#30574f"/></g>
+<g><title>2026-09-05 · 23 contributions</title><rect x="53" y="202" width="23" height="7" rx="2" fill="#e2f594"/></g>
+<g><title>2026-09-06 · 6 contributions</title><rect x="53" y="211" width="23" height="7" rx="2" fill="#a7e1ab"/></g>
+<g><title>2026-09-07 · 0 contributions</title><rect x="79.25" y="157" width="23" height="7" rx="2" fill="#30574f"/></g>
+<g><title>2026-09-08 · 2 contributions</title><rect x="79.25" y="166" width="23" height="7" rx="2" fill="#70bc9f"/></g>
+<g><title>2026-09-09 · 2 contributions</title><rect x="79.25" y="175" width="23" height="7" rx="2" fill="#70bc9f"/></g>
+<g><title>2026-09-10 · 7 contributions</title><rect x="79.25" y="184" width="23" height="7" rx="2" fill="#a7e1ab"/></g>
+<g><title>2026-09-11 · 0 contributions</title><rect x="79.25" y="193" width="23" height="7" rx="2" fill="#30574f"/></g>
+<g><title>2026-09-12 · 0 contributions</title><rect x="79.25" y="202" width="23" height="7" rx="2" fill="#30574f"/></g>
+<g><title>2026-09-13 · 8 contributions</title><rect x="79.25" y="211" width="23" height="7" rx="2" fill="#e2f594"/></g>
+<g><title>2026-09-14 · 4 contributions</title><rect x="105.5" y="157" width="23" height="7" rx="2" fill="#a7e1ab"/></g>
+<g><title>2026-09-15 · 7 contributions</title><rect x="105.5" y="166" width="23" height="7" rx="2" fill="#a7e1ab"/></g>
+<g><title>2026-09-16 · 5 contributions</title><rect x="105.5" y="175" width="23" height="7" rx="2" fill="#a7e1ab"/></g>
+<g><title>2026-09-17 · 0 contributions</title><rect x="105.5" y="184" width="23" height="7" rx="2" fill="#30574f"/></g>
+<g><title>2026-09-18 · 0 contributions</title><rect x="105.5" y="193" width="23" height="7" rx="2" fill="#30574f"/></g>
+<g><title>2026-09-19 · 0 contributions</title><rect x="105.5" y="202" width="23" height="7" rx="2" fill="#30574f"/></g>
+<g><title>2026-09-20 · 0 contributions</title><rect x="105.5" y="211" width="23" height="7" rx="2" fill="#30574f"/></g>
+<g><title>2026-09-21 · 0 contributions</title><rect x="131.75" y="157" width="23" height="7" rx="2" fill="#30574f"/></g>
+<g><title>2026-09-22 · 0 contributions</title><rect x="131.75" y="166" width="23" height="7" rx="2" fill="#30574f"/></g>
+<g><title>2026-09-23 · 0 contributions</title><rect x="131.75" y="175" width="23" height="7" rx="2" fill="#30574f"/></g>
+<g><title>2026-09-24 · 0 contributions</title><rect x="131.75" y="184" width="23" height="7" rx="2" fill="#30574f"/></g>
+<g><title>2026-09-25 · 1 contributions</title><rect x="131.75" y="193" width="23" height="7" rx="2" fill="#70bc9f"/></g>
+<g><title>2026-09-26 · 0 contributions</title><rect x="131.75" y="202" width="23" height="7" rx="2" fill="#30574f"/></g>
+<g><title>2026-09-27 · 0 contributions</title><rect x="131.75" y="211" width="23" height="7" rx="2" fill="#30574f"/></g>
+<g><title>2026-09-28 · 0 contributions</title><rect x="158" y="157" width="23" height="7" rx="2" fill="#30574f"/></g>
+<g><title>2026-09-29 · 1 contributions</title><rect x="158" y="166" width="23" height="7" rx="2" fill="#70bc9f"/></g>
+<g><title>2026-09-30 · 1 contributions</title><rect x="158" y="175" width="23" height="7" rx="2" fill="#70bc9f"/></g>
+<g><title>2026-10-01 · 2 contributions</title><rect x="158" y="184" width="23" height="7" rx="2" fill="#70bc9f"/></g>
+<g><title>2026-10-02 · 0 contributions</title><rect x="158" y="193" width="23" height="7" rx="2" fill="#30574f"/></g>
+<g><title>2026-10-03 · 0 contributions</title><rect x="158" y="202" width="23" height="7" rx="2" fill="#30574f"/></g>
+<g><title>2026-10-04 · 1 contributions</title><rect x="158" y="211" width="23" height="7" rx="2" fill="#70bc9f"/></g>
+<g><title>2026-10-05 · 2 contributions</title><rect x="184.25" y="157" width="23" height="7" rx="2" fill="#70bc9f"/></g>
+<g><title>2026-10-06 · 6 contributions</title><rect x="184.25" y="166" width="23" height="7" rx="2" fill="#a7e1ab"/></g>
+<g><title>2026-10-07 · 2 contributions</title><rect x="184.25" y="175" width="23" height="7" rx="2" fill="#70bc9f"/></g>
+<g><title>2026-10-08 · 0 contributions</title><rect x="184.25" y="184" width="23" height="7" rx="2" fill="#30574f"/></g>
+<g><title>2026-10-09 · 4 contributions</title><rect x="184.25" y="193" width="23" height="7" rx="2" fill="#a7e1ab"/></g>
+<g><title>2026-10-10 · 7 contributions</title><rect x="184.25" y="202" width="23" height="7" rx="2" fill="#a7e1ab"/></g>
+<g><title>2026-10-11 · 0 contributions</title><rect x="184.25" y="211" width="23" height="7" rx="2" fill="#30574f"/></g>
+<g><title>2026-10-12 · 0 contributions</title><rect x="210.5" y="157" width="23" height="7" rx="2" fill="#30574f"/></g>
+<g><title>2026-10-13 · 4 contributions</title><rect x="210.5" y="166" width="23" height="7" rx="2" fill="#a7e1ab"/></g>
+<g><title>2026-10-14 · 2 contributions</title><rect x="210.5" y="175" width="23" height="7" rx="2" fill="#70bc9f"/></g>
+<g><title>2026-10-15 · 1 contributions</title><rect x="210.5" y="184" width="23" height="7" rx="2" fill="#70bc9f"/></g>
+<g><title>2026-10-16 · 0 contributions</title><rect x="210.5" y="193" width="23" height="7" rx="2" fill="#30574f"/></g>
+<g><title>2026-10-17 · 0 contributions</title><rect x="210.5" y="202" width="23" height="7" rx="2" fill="#30574f"/></g>
+<g><title>2026-10-18 · 0 contributions</title><rect x="210.5" y="211" width="23" height="7" rx="2" fill="#30574f"/></g>
+<g><title>2026-10-19 · 1 contributions</title><rect x="236.75" y="157" width="23" height="7" rx="2" fill="#70bc9f"/></g>
+<g><title>2026-10-20 · 4 contributions</title><rect x="236.75" y="166" width="23" height="7" rx="2" fill="#a7e1ab"/></g>
+<g><title>2026-10-21 · 3 contributions</title><rect x="236.75" y="175" width="23" height="7" rx="2" fill="#70bc9f"/></g>
+<g><title>2026-10-22 · 3 contributions</title><rect x="236.75" y="184" width="23" height="7" rx="2" fill="#70bc9f"/></g>
+<g><title>2026-10-23 · 4 contributions</title><rect x="236.75" y="193" width="23" height="7" rx="2" fill="#a7e1ab"/></g>
+<g><title>2026-10-24 · 0 contributions</title><rect x="236.75" y="202" width="23" height="7" rx="2" fill="#30574f"/></g>
+<g><title>2026-10-25 · 5 contributions</title><rect x="236.75" y="211" width="23" height="7" rx="2" fill="#a7e1ab"/></g>
+<g><title>2026-10-26 · 2 contributions</title><rect x="263" y="157" width="23" height="7" rx="2" fill="#70bc9f"/></g>
+<g><title>2026-10-27 · 2 contributions</title><rect x="263" y="166" width="23" height="7" rx="2" fill="#70bc9f"/></g>
+<g><title>2026-10-28 · 0 contributions</title><rect x="263" y="175" width="23" height="7" rx="2" fill="#30574f"/></g>
+<g><title>2026-10-29 · 1 contributions</title><rect x="263" y="184" width="23" height="7" rx="2" fill="#70bc9f"/></g>
+<g><title>2026-10-30 · 0 contributions</title><rect x="263" y="193" width="23" height="7" rx="2" fill="#30574f"/></g>
+<g><title>2026-10-31 · 4 contributions</title><rect x="263" y="202" width="23" height="7" rx="2" fill="#a7e1ab"/></g>
+<g><title>2026-11-01 · 0 contributions</title><rect x="263" y="211" width="23" height="7" rx="2" fill="#30574f"/></g>
+<g><title>2026-11-02 · 0 contributions</title><rect x="289.25" y="157" width="23" height="7" rx="2" fill="#30574f"/></g>
+<g><title>2026-11-03 · 0 contributions</title><rect x="289.25" y="166" width="23" height="7" rx="2" fill="#30574f"/></g>
+<g><title>2026-11-04 · 0 contributions</title><rect x="289.25" y="175" width="23" height="7" rx="2" fill="#30574f"/></g>
+<g><title>2026-11-05 · 0 contributions</title><rect x="289.25" y="184" width="23" height="7" rx="2" fill="#30574f"/></g>
+<g><title>2026-11-06 · 0 contributions</title><rect x="289.25" y="193" width="23" height="7" rx="2" fill="#30574f"/></g>
+<g><title>2026-11-07 · 0 contributions</title><rect x="289.25" y="202" width="23" height="7" rx="2" fill="#30574f"/></g>
+<g><title>2026-11-08 · 0 contributions</title><rect x="289.25" y="211" width="23" height="7" rx="2" fill="#30574f"/></g>
+<g><title>2026-11-09 · 0 contributions</title><rect x="315.5" y="157" width="23" height="7" rx="2" fill="#30574f"/></g>
+<g><title>2026-11-10 · 11 contributions</title><rect x="315.5" y="166" width="23" height="7" rx="2" fill="#e2f594"/></g>
+<g><title>2026-11-11 · 0 contributions</title><rect x="315.5" y="175" width="23" height="7" rx="2" fill="#30574f"/></g>
+<g><title>2026-11-12 · 0 contributions</title><rect x="315.5" y="184" width="23" height="7" rx="2" fill="#30574f"/></g>
+<g><title>2026-11-13 · 7 contributions</title><rect x="315.5" y="193" width="23" height="7" rx="2" fill="#a7e1ab"/></g>
+<g><title>2026-11-14 · 4 contributions</title><rect x="315.5" y="202" width="23" height="7" rx="2" fill="#a7e1ab"/></g>
+<g><title>2026-11-15 · 9 contributions</title><rect x="315.5" y="211" width="23" height="7" rx="2" fill="#e2f594"/></g>
+<g><title>2026-11-16 · 4 contributions</title><rect x="341.75" y="157" width="23" height="7" rx="2" fill="#a7e1ab"/></g>
+<g><title>2026-11-17 · 3 contributions</title><rect x="341.75" y="166" width="23" height="7" rx="2" fill="#70bc9f"/></g>
+<g><title>2026-11-18 · 3 contributions</title><rect x="341.75" y="175" width="23" height="7" rx="2" fill="#70bc9f"/></g>
+<g><title>2026-11-19 · 3 contributions</title><rect x="341.75" y="184" width="23" height="7" rx="2" fill="#70bc9f"/></g>
+<g><title>2026-11-20 · 0 contributions</title><rect x="341.75" y="193" width="23" height="7" rx="2" fill="#30574f"/></g>
+<g><title>2026-11-21 · 2 contributions</title><rect x="341.75" y="202" width="23" height="7" rx="2" fill="#70bc9f"/></g>
+<g><title>2026-11-22 · 0 contributions</title><rect x="341.75" y="211" width="23" height="7" rx="2" fill="#30574f"/></g>
+<text x="53" y="232" fill="#d7eee8" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="start">Aug 31</text>
+<text x="368" y="232" fill="#d7eee8" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="end">Nov 22</text>
+<rect x="22" y="239" width="346" height="1" rx="0" fill="#3c6057"/>
+<text x="22" y="262" fill="#b9efb4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="start">44 of 84 days active</text>
+<text x="290" y="261" fill="#d7eee8" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" text-anchor="end">Less</text>
+<rect x="294" y="253" width="9" height="9" rx="2" fill="#30574f"/>
+<rect x="305" y="253" width="9" height="9" rx="2" fill="#70bc9f"/>
+<rect x="316" y="253" width="9" height="9" rx="2" fill="#a7e1ab"/>
+<rect x="327" y="253" width="9" height="9" rx="2" fill="#e2f594"/>
+<text x="341" y="261" fill="#d7eee8" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" text-anchor="start">More</text>
+</g>
+</svg>
