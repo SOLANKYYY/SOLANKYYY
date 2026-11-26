@@ -1,6 +1,7 @@
 """Refresh the profile's GitHub metrics and the accessible text in ReadMe.md."""
 from collections import Counter
-from datetime import date
+from datetime import date, datetime, timezone
+from hashlib import sha256
 from html import escape, unescape
 import json
 import os
@@ -10,10 +11,15 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import quote
 from urllib.request import Request, urlopen
 
+from activity_chart import description, render
+from github_activity import DAY, public_calendar, public_commits, summarize_activity
+
 ROOT = Path(__file__).resolve().parents[1]
 STUDIO = ROOT / "assets" / "studio"
 START = "<!-- github-stats:start -->"
 END = "<!-- github-stats:end -->"
+ACTIVITY_START = "<!-- github-activity:start -->"
+ACTIVITY_END = "<!-- github-activity:end -->"
 LANG_COLORS = {
     "HTML": "#ff9c81", "Python": "#86c9ff", "JavaScript": "#f5d76b",
     "Jupyter Notebook": "#efb3ec", "TypeScript": "#77e1d1",
@@ -52,8 +58,7 @@ def contribution_total(owner, token):
     return int(match[1].replace(",", ""))
 
 
-def collect(owner):
-    token = os.environ.get("GH_TOKEN")
+def public_repositories(owner, token):
     repos = []
     page = 1
     while True:
@@ -62,6 +67,13 @@ def collect(owner):
         if len(batch) < 100:
             break
         page += 1
+    return repos
+
+
+def collect(owner, repos=None):
+    token = os.environ.get("GH_TOKEN")
+    if repos is None:
+        repos = public_repositories(owner, token)
     return summarize(repos, contribution_total(owner, token))
 
 
@@ -177,6 +189,45 @@ Snapshot from GitHub on {snapshot_date}. [Public repositories](https://github.co
         readme.write_text(updated, encoding="utf-8")
 
 
+def write_activity(activity, owner):
+    readme = ROOT / "ReadMe.md"
+    current = readme.read_text(encoding="utf-8")
+    before, start, region = current.partition(ACTIVITY_START)
+    _, end, after = region.partition(ACTIVITY_END)
+    if not (start and end) or current.count(start) != 1 or current.count(end) != 1:
+        raise ValueError("ReadMe.md must contain one activity block.")
+    charts = {"activity.svg": render(activity, False), "activity-mobile.svg": render(activity, True)}
+    version = sha256("".join(charts.values()).encode()).hexdigest()[:10]
+    base = f"https://raw.githubusercontent.com/{owner}/{owner}/main/assets/studio"
+    profile = f"https://github.com/{owner}"
+    alt = escape(description(activity), quote=True)
+    block = f'''
+<picture>
+  <source media="(max-width: 760px)" srcset="{base}/activity-mobile.svg?v={version}">
+  <img src="{base}/activity.svg?v={version}" width="100%" alt="{alt}">
+</picture>
+
+Through **{activity.as_of.day} {activity.as_of:%B %Y} UTC**. Days with any GitHub contribution count toward streaks and active weeks. The commit chart covers the default branch of each of my public repositories.
+
+[Explore my contribution calendar]({profile}#js-contribution-activity-description) · [Browse my public commits](https://github.com/search?q=author%3A{quote(owner)}+user%3A{quote(owner)}+is%3Apublic&type=commits)
+'''
+    for name, svg in charts.items():
+        path = STUDIO / name
+        if not path.exists() or path.read_text(encoding="utf-8") != svg:
+            path.write_text(svg, encoding="utf-8")
+    updated = before + start + "\n" + block + "\n" + end + after
+    if updated != current:
+        readme.write_text(updated, encoding="utf-8")
+
+
 if __name__ == "__main__":
     owner = os.environ.get("GITHUB_REPOSITORY_OWNER", "SOLANKYYY")
-    write_stats(collect(owner), owner)
+    token = os.environ.get("GH_TOKEN")
+    cutoff = datetime.now(timezone.utc).date() - DAY
+    repos = public_repositories(owner, token)
+    calendar = public_calendar(owner, cutoff, request)
+    commits = public_commits(owner, repos, cutoff, request, token)
+    activity = summarize_activity(cutoff, calendar, commits, len(repos))
+    inventory = collect(owner, repos)
+    write_activity(activity, owner)
+    write_stats(inventory, owner)

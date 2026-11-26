@@ -26,6 +26,22 @@ My field notes take you inside each build. [Follow a Signal Desk citation](https
 
 ## GitHub stats
 
+<!-- github-activity:start -->
+
+<picture>
+  <source media="(max-width: 760px)" srcset="https://raw.githubusercontent.com/SOLANKYYY/SOLANKYYY/main/assets/studio/activity-mobile.svg?v=83da304453">
+  <img src="https://raw.githubusercontent.com/SOLANKYYY/SOLANKYYY/main/assets/studio/activity.svg?v=83da304453" width="100%" alt="Through 2026-11-25 UTC. Current streak 2 days, longest streak 7 days. 67 authored commits in 30 days across 22 public repositories. Activity in 11 of the last 12 complete weeks, on 44 of 84 days.">
+</picture>
+
+Through **25 November 2026 UTC**. Days with any GitHub contribution count toward streaks and active weeks. The commit chart covers the default branch of each of my public repositories.
+
+[Explore my contribution calendar](https://github.com/SOLANKYYY#js-contribution-activity-description) · [Browse my public commits](https://github.com/search?q=author%3ASOLANKYYY+user%3ASOLANKYYY+is%3Apublic&type=commits)
+
+<!-- github-activity:end -->
+
+<details>
+<summary>Repository totals and languages</summary>
+
 <p>
   <a href="https://github.com/SOLANKYYY?tab=followers"><img src="https://img.shields.io/github/followers/SOLANKYYY?style=flat-square&amp;label=Followers&amp;labelColor=3c3353&amp;color=b9a9f9" alt="Current GitHub follower count"></a>
   <a href="https://github.com/SOLANKYYY?tab=repositories"><img src="https://img.shields.io/github/stars/SOLANKYYY?affiliations=OWNER&amp;style=flat-square&amp;label=Stars%20received&amp;labelColor=3c3353&amp;color=ffbd94" alt="Current stars received by my public repositories"></a>
@@ -42,6 +58,8 @@ My field notes take you inside each build. [Follow a Signal Desk citation](https
 Snapshot from GitHub on 2026-11-25. [Public repositories](https://github.com/SOLANKYYY?tab=repositories) · [Contribution calendar](https://github.com/SOLANKYYY#js-contribution-activity-description)
 
 <!-- github-stats:end -->
+
+</details>
 
 ## Beyond the featured projects
 
