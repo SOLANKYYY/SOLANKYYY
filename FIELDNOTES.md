@@ -1,8 +1,12 @@
 # Field notes
 
-Three short stops inside my projects. Each starts with something you can check for yourself.
+Six short stops inside my projects. Each starts with something you can check for yourself.
 
-[Signal Desk](#signal-desk) · [RetinaBridge](#retinabridge) · [AgriLens](#agrilens) · [Back to my profile](https://github.com/SOLANKYYY)
+**Side A** [Signal Desk](#signal-desk) · [RetinaBridge](#retinabridge) · [AgriLens](#agrilens)
+
+**Side B** [GameArena](#gamearena) · [Flat & Fork](#flat-and-fork) · [FrameFlow](#frameflow)
+
+[Back to my profile](https://github.com/SOLANKYYY)
 
 ## Signal Desk
 
@@ -46,5 +50,39 @@ The label was **rice**. On the next record the models agreed on **chickpea**. Th
 I counted matches after trimming spaces and ignoring case. Keeping the original replies makes it possible to inspect a confident mistake one row at a time. [See the saved predictions](https://github.com/SOLANKYYY/agrilens-llm-benchmark/blob/main/Crop_model_comparison_results.csv) · [Read the benchmark method](https://github.com/SOLANKYYY/agrilens-llm-benchmark/blob/main/REPORT.md)
 
 </details>
+
+## GameArena
+
+### Do the coins still add up?
+
+Picture fifty teams finishing a game at the same time. A fast response is only part of the job. The result on each team’s screen needs to agree with the wallet and game count stored in PostgreSQL.
+
+| Local test | What I checked at the finish |
+| --- | --- |
+| 50 teams played one game apiece in each of 21 waves | All 1,050 games completed. Each team’s final balance and play count matched the results returned to its players. |
+| One account submitted eight overlapping Dice plays | The final balance, number of games and sequence number used to generate the results all matched. |
+
+The second run gives eight requests a reason to touch the same wallet. That made it a good companion to the fifty-team run, where each team had its own. [Read the setup and measurements](https://github.com/SOLANKYYY/GameArena/blob/master/docs/capacity.md)
+
+## Flat and Fork
+
+### Who has the dishes tomorrow?
+
+Say you’ve finished one chore and still have another on the board when you leave for the day. Mark yourself away and hand the unfinished job to a flatmate who’s home. The finished chore keeps your name in the history, so credit stays with whoever actually did it.
+
+Coming home early leaves the day’s handover in place. Tomorrow the normal rotation resumes. The difference between those two moments is exactly what I wanted to capture when I added away status. [See the handover rules and worked checks](https://github.com/SOLANKYYY/flat-and-fork/blob/main/MOBILE-PROFILES-HANDOVER.md)
+
+## FrameFlow
+
+### Can a worker catch the next frame?
+
+Set the simulated camera to **30 frames per second** and send every **tenth** frame to a single worker. That gives it a new frame roughly every 333 milliseconds. Guess how many it will accept in ten seconds before you look at the table.
+
+| Processing time per frame | Accepted | Dropped while busy |
+| --- | ---: | ---: |
+| 100 ms | 30 | 0 |
+| 400 ms | 15 | 15 |
+
+At 400 milliseconds the next frame arrives while the worker is still busy. By the following arrival it is free again. You can trace that pattern in the simulator or read the assertions for those exact settings. [Explore the scheduling logic](https://github.com/SOLANKYYY/frameflow-vision-lab/blob/main/docs/logic.js) · [Read the tests](https://github.com/SOLANKYYY/frameflow-vision-lab/blob/main/tests/test.cjs)
 
 [Browse all my public repositories](https://github.com/SOLANKYYY/SOLANKYYY/blob/main/ReadMe.md#repository-directory)
