@@ -1,73 +1,53 @@
 <h1>
   <picture>
-    <source media="(max-width: 760px)" srcset="https://raw.githubusercontent.com/SOLANKYYY/SOLANKYYY/main/assets/studio/hero-mobile.svg?v=portrait-2">
-    <img src="https://raw.githubusercontent.com/SOLANKYYY/SOLANKYYY/main/assets/studio/hero.svg?v=portrait-2" width="100%" alt="An illustrated portrait of Om Solanki, a computer science and AI/ML undergraduate in Bengaluru. In his studio the lettering cycles through computer vision, language models and full-stack apps.">
+    <source media="(max-width: 760px)" srcset="https://raw.githubusercontent.com/SOLANKYYY/SOLANKYYY/main/assets/mixtape/cover-mobile.svg">
+    <img width="100%" src="https://raw.githubusercontent.com/SOLANKYYY/SOLANKYYY/main/assets/mixtape/cover.svg" alt="Om Solanki on shuffle. A cassette cycles through computer vision, language models, full-stack apps, data experiments and arcade games.">
   </picture>
 </h1>
 
-I’m **Om Solanki**, a B.Tech computer science and AI/ML student at Jain University in Bengaluru. When a model gives me an answer, I want to know what made it say that. I build tools that let you follow the source, inspect the image and look up the experiment for yourself.
+I’m **Om Solanki**, a B.Tech computer science and AI/ML student at Jain University in Bengaluru. I write Python and MATLAB to see what models pick up, then build web apps people can try. Sometimes that means tracing a prediction back to an image. Sometimes it means settling who’s on laundry duty or keeping score in a seven-game arcade.
 
-<p>
-  <a href="https://solanki-portfolio-v4.vercel.app/"><img src="https://raw.githubusercontent.com/SOLANKYYY/SOLANKYYY/main/assets/studio/portfolio.svg" width="115" alt="Portfolio"></a>
-  <a href="https://www.linkedin.com/in/solanki-om-b89793330/"><img src="https://raw.githubusercontent.com/SOLANKYYY/SOLANKYYY/main/assets/studio/linkedin.svg" width="115" alt="LinkedIn"></a>
-  <a href="mailto:om.n.solanki49@gmail.com"><img src="https://raw.githubusercontent.com/SOLANKYYY/SOLANKYYY/main/assets/studio/email.svg" width="115" alt="Email Om"></a>
-  <a href="https://x.com/Om_solanki49"><img src="https://raw.githubusercontent.com/SOLANKYYY/SOLANKYYY/main/assets/studio/x.svg" width="115" alt="Find me on X"></a>
-</p>
+The duck in the headphones reviews my code. Excellent listener. Suspiciously few comments.
 
-## Featured projects
+[Portfolio](https://solanki-portfolio-v4.vercel.app/) · [LinkedIn](https://www.linkedin.com/in/solanki-om-b89793330/) · [Email](mailto:om.n.solanki49@gmail.com) · [X](https://x.com/Om_solanki49)
+
+## Six projects on rotation
 
 <p align="center">
-  <a href="https://github.com/SOLANKYYY/signal-desk"><img src="https://raw.githubusercontent.com/SOLANKYYY/SOLANKYYY/main/assets/studio/featured-signal.svg" width="254" alt="Signal Desk — trace an answer back to the threat report it cites. Open the repository."></a>
-  <a href="https://github.com/SOLANKYYY/RetinaBridge"><img src="https://raw.githubusercontent.com/SOLANKYYY/SOLANKYYY/main/assets/studio/featured-retina.svg" width="254" alt="RetinaBridge — inspect a heatmap beside the original retinal image. Open the repository."></a>
-  <a href="https://github.com/SOLANKYYY/agrilens-llm-benchmark"><img src="https://raw.githubusercontent.com/SOLANKYYY/SOLANKYYY/main/assets/studio/featured-agri.svg" width="254" alt="AgriLens LLM Benchmark — compare two local language models on 2,200 crop records. Open the repository."></a>
+  <a href="https://github.com/SOLANKYYY/signal-desk"><img width="245" src="https://raw.githubusercontent.com/SOLANKYYY/SOLANKYYY/main/assets/mixtape/signal.svg" alt="A1 · Signal Desk. Trace a chat answer back to the report it cites."></a>
+  <a href="https://github.com/SOLANKYYY/RetinaBridge"><img width="245" src="https://raw.githubusercontent.com/SOLANKYYY/SOLANKYYY/main/assets/mixtape/retina.svg" alt="A2 · RetinaBridge. See a retinal image beside the model’s heatmap."></a>
+  <a href="https://github.com/SOLANKYYY/agrilens-llm-benchmark"><img width="245" src="https://raw.githubusercontent.com/SOLANKYYY/SOLANKYYY/main/assets/mixtape/agrilens.svg" alt="A3 · AgriLens LLM Benchmark. Compare two local LLMs on 2,200 crop records."></a>
+  <a href="https://github.com/SOLANKYYY/GameArena"><img width="245" src="https://raw.githubusercontent.com/SOLANKYYY/SOLANKYYY/main/assets/mixtape/gamearena.svg" alt="B1 · GameArena. Play seven arcade games in a team tournament."></a>
+  <a href="https://github.com/SOLANKYYY/flat-and-fork"><img width="245" src="https://raw.githubusercontent.com/SOLANKYYY/SOLANKYYY/main/assets/mixtape/flat-fork.svg" alt="B2 · Flat &amp; Fork. Vote on dinner. Trade tomorrow’s laundry turn."></a>
+  <a href="https://github.com/SOLANKYYY/frameflow-vision-lab"><img width="245" src="https://raw.githubusercontent.com/SOLANKYYY/SOLANKYYY/main/assets/mixtape/frameflow.svg" alt="B3 · FrameFlow. Skip frames. Add delays. Watch the pipeline respond."></a>
 </p>
 
-My field notes take you inside each build. [Follow a Signal Desk citation](https://github.com/SOLANKYYY/SOLANKYYY/blob/main/FIELDNOTES.md#signal-desk) · [Read a RetinaBridge heatmap](https://github.com/SOLANKYYY/SOLANKYYY/blob/main/FIELDNOTES.md#retinabridge) · [Reveal the crop that fooled both models](https://github.com/SOLANKYYY/SOLANKYYY/blob/main/FIELDNOTES.md#agrilens)
+For the stories behind Side A, follow a Signal Desk citation, inspect a RetinaBridge heatmap, or meet the crop that fooled both language models. [Read the field notes](https://github.com/SOLANKYYY/SOLANKYYY/blob/main/FIELDNOTES.md)
 
-## GitHub stats
+## GitHub activity
 
-<!-- github-activity:start -->
+<!-- live-profile-stats -->
 
 <picture>
-  <source media="(max-width: 760px)" srcset="https://raw.githubusercontent.com/SOLANKYYY/SOLANKYYY/main/assets/studio/activity-mobile.svg?v=83da304453">
-  <img src="https://raw.githubusercontent.com/SOLANKYYY/SOLANKYYY/main/assets/studio/activity.svg?v=83da304453" width="100%" alt="Through 2026-11-25 UTC. Current streak 2 days, longest streak 7 days. 67 authored commits in 30 days across 22 public repositories. Activity in 11 of the last 12 complete weeks, on 44 of 84 days.">
+  <source media="(max-width: 760px)" srcset="https://solankyyy-profile-mixtape.vercel.app/api/activity?view=activity&amp;layout=mobile">
+  <img width="100%" src="https://solankyyy-profile-mixtape.vercel.app/api/activity?view=activity&amp;layout=wide" alt="Contribution streaks, a 30-day authored commit graph and a 12-week consistency grid. The text version below includes the current figures.">
 </picture>
 
-Through **25 November 2026 UTC**. Days with any GitHub contribution count toward streaks and active weeks. The commit chart covers the default branch of each of my public repositories.
+The streak and weekly grid use days with GitHub contributions. The bars count my authored commits on the default branches of my public repositories. Each chart shows its latest complete UTC day.
 
-[Explore my contribution calendar](https://github.com/SOLANKYYY#js-contribution-activity-description) · [Browse my public commits](https://github.com/search?q=author%3ASOLANKYYY+user%3ASOLANKYYY+is%3Apublic&type=commits)
-
-<!-- github-activity:end -->
+[Read the current numbers](https://solankyyy-profile-mixtape.vercel.app/api/activity?view=text) · [Open my contribution calendar](https://github.com/SOLANKYYY#js-contribution-activity-description) · [Browse my public commits](https://github.com/search?q=author%3ASOLANKYYY+user%3ASOLANKYYY+is%3Apublic&type=commits)
 
 <details>
 <summary>Repository totals and languages</summary>
 
-<p>
-  <a href="https://github.com/SOLANKYYY?tab=followers"><img src="https://img.shields.io/github/followers/SOLANKYYY?style=flat-square&amp;label=Followers&amp;labelColor=3c3353&amp;color=b9a9f9" alt="Current GitHub follower count"></a>
-  <a href="https://github.com/SOLANKYYY?tab=repositories"><img src="https://img.shields.io/github/stars/SOLANKYYY?affiliations=OWNER&amp;style=flat-square&amp;label=Stars%20received&amp;labelColor=3c3353&amp;color=ffbd94" alt="Current stars received by my public repositories"></a>
-  <a href="https://github.com/SOLANKYYY#js-contribution-activity-description"><img src="https://img.shields.io/badge/dynamic/regex?url=https%3A%2F%2Fgithub.com%2Fusers%2FSOLANKYYY%2Fcontributions&amp;search=%28%5B0-9%5D%5B0-9%2C%5D*%29%5Cs%2Bcontributions%3F%5Cs%2Bin%5Cs%2Bthe%5Cs%2Blast%5Cs%2Byear&amp;replace=%241&amp;style=flat-square&amp;label=Contributions%20%2812%20mo%29&amp;labelColor=3c3353&amp;color=a5e5d1" alt="Contributions on the public GitHub calendar over the past 12 months"></a>
-</p>
-
-<!-- github-stats:start -->
-
 <picture>
-  <source media="(max-width: 760px)" srcset="https://raw.githubusercontent.com/SOLANKYYY/SOLANKYYY/main/assets/studio/github-stats-mobile.svg">
-  <img src="https://raw.githubusercontent.com/SOLANKYYY/SOLANKYYY/main/assets/studio/github-stats.svg" width="100%" alt="22 public repositories, 10 stars received, 1 fork received. Repositories by primary language — HTML 8, Python 5, JavaScript 3, Jupyter Notebook 2, TypeScript 2, Java 1, MATLAB 1.">
+  <source media="(max-width: 760px)" srcset="https://solankyyy-profile-mixtape.vercel.app/api/activity?view=totals&amp;layout=mobile">
+  <img width="100%" src="https://solankyyy-profile-mixtape.vercel.app/api/activity?view=totals&amp;layout=wide" alt="Public repository count, stars, forks and primary languages. Exact values are available in the text link above.">
 </picture>
-
-Snapshot from GitHub on 2026-11-25. [Public repositories](https://github.com/SOLANKYYY?tab=repositories) · [Contribution calendar](https://github.com/SOLANKYYY#js-contribution-activity-description)
-
-<!-- github-stats:end -->
 
 </details>
 
-## Beyond the featured projects
-
-- **LungLens** taught me to keep the baseline. I led the student team, and our classical model outscored our CNN on the held-out CT images. We published both evaluations. [Compare the models](https://github.com/SOLANKYYY/lunglens)
-- **GameArena** gave me a different kind of test. In a local load test, 50 teams signed in together and finished 1,050 arcade games with the correct final balances. [See the load test](https://github.com/SOLANKYYY/GameArena/blob/master/docs/capacity.md)
-- **Flat & Fork** settles the questions flatmates actually ask. What are we eating, who’s washing up, and who can take my laundry turn today? [Explore the app](https://github.com/SOLANKYYY/flat-and-fork)
-
-I work with **Python, MATLAB, PyTorch and ONNX Runtime** for experiments, and **Flask, Next.js, MongoDB and PostgreSQL** for the apps around them. I’m open to collaborating on applied AI, computer vision and software that makes research easier to explore. [Get in touch](mailto:om.n.solanki49@gmail.com)
+I work with **Python, MATLAB, PyTorch and ONNX Runtime** for experiments, and **Flask, Next.js, MongoDB and PostgreSQL** for the apps around them. I’m open to building things together, especially applied AI, tools for exploring data, and games. [Get in touch](mailto:om.n.solanki49@gmail.com)
 
 ## Repository directory
 
@@ -121,6 +101,6 @@ I work with **Python, MATLAB, PyTorch and ONNX Runtime** for experiments, and **
 | --- | --- |
 | [LeetCode Solutions](https://github.com/SOLANKYYY/LeetCode-Solutions) | Collects my algorithm solutions across arrays, linked lists, dynamic programming and other topics. |
 | [Web Boot Camp](https://github.com/SOLANKYYY/Boot_camp_1) | Early HTML exercises recreating a landing page and building a sign-up form. |
-| [GitHub Profile](https://github.com/SOLANKYYY/SOLANKYYY) | Holds this profile, the project illustrations and the field notes linked above. |
+| [GitHub Profile](https://github.com/SOLANKYYY/SOLANKYYY) | Holds the animated mixtape, the public GitHub stats renderer and notes from three builds. |
 
 </details>
