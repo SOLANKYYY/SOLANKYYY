@@ -1,10 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="270" height="96" viewBox="0 0 270 96" role="img" aria-labelledby="title">
-<title id="title">Signal Desk. Trace a chat answer back to the report it cites.</title>
-<rect x="1" y="1" width="268" height="94" rx="7" fill="#ff997d" stroke="#20212b" stroke-width="2"/>
-<path d="M35 2v92m5-92v92" fill="none" stroke="#20212b" stroke-width="1.5"/>
-<g fill="none" stroke="#20212b" stroke-width="2"><circle cx="18" cy="18" r="6"/><circle cx="18" cy="18" r="2"/><circle cx="18" cy="78" r="6"/><circle cx="18" cy="78" r="2"/></g>
-<text x="18" y="53" fill="#20212b" font-family="Courier New,Courier,monospace" font-size="13" font-weight="700" style="" text-anchor="middle">A1</text>
-<text x="50" y="30" fill="#20212b" font-family="Arial Black,Arial,Helvetica,sans-serif" font-size="23" font-weight="800" style="letter-spacing:-.7px" >Signal Desk</text>
-<text x="50" y="58" fill="#20212b" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400" style="" >Trace a chat answer back</text>
-<text x="50" y="78" fill="#20212b" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400" style="" >to the report it cites.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="110" viewBox="0 0 300 110" role="img" aria-labelledby="title">
+<title id="title">A1 · Signal Desk. Trace a chat answer back to the report it cites.</title>
+<defs><linearGradient id="wash" x2="1" y2=".8"><stop stop-color="#bacbff"/><stop offset="1" stop-color="#83a6ff"/></linearGradient></defs>
+<rect x="1" y="1" width="298" height="108" rx="11" fill="url(#wash)" stroke="#151630" stroke-width="2"/>
+<path d="M56 3v104" stroke="#151630" stroke-opacity=".45" stroke-dasharray="2 3"/>
+<g transform="translate(11 21)" stroke="#151630" fill="none" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h9l5 5h10M4 23h9l5-5h10"/><circle cx="3" cy="9" r="2"/><circle cx="3" cy="23" r="2"/><circle cx="29" cy="16" r="3"/></g>
+<text x="27" y="83" fill="#151630" font-family="IBM Plex Mono,Consolas,Liberation Mono,monospace" font-size="15" font-weight="700" text-anchor="middle">A1</text>
+<text x="69" y="38" fill="#151630" font-family="Inter,Arial,Helvetica,sans-serif" font-size="25" font-weight="750" letter-spacing="-.6">Signal Desk</text>
+<text x="69" y="67" fill="#151630" font-family="Inter,Arial,Helvetica,sans-serif" font-size="16" font-weight="400" >Trace a chat answer back</text>
+<text x="69" y="88" fill="#151630" font-family="Inter,Arial,Helvetica,sans-serif" font-size="16" font-weight="400" >to the report it cites.</text>
 </svg>

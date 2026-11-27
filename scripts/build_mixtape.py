@@ -1,144 +1,147 @@
-"""Draw the responsive cassette cover and the six linked tape sleeves."""
+"""Build the GitHub-safe album cover and six linked project sleeves."""
 import base64
 from html import escape
 from pathlib import Path
 
 ART = Path(__file__).resolve().parents[1] / "assets" / "mixtape"
-INK, PAPER, MINT, RED, GOLD = "#20212b", "#fff1d6", "#78ddc6", "#e95034", "#ffc54b"
-SANS = "Arial Black,Arial,Helvetica,sans-serif"
-MONO = "Courier New,Courier,monospace"
+SANS = "Inter,Arial,Helvetica,sans-serif"
+MONO = "IBM Plex Mono,Consolas,Liberation Mono,monospace"
+INK = "#151630"
+WHITE = "#f7f5ff"
+MUTED = "#d7d9f1"
+TRACK_SECONDS = 6
 
-TRACKS = [
-    ("Computer vision", "#ffbb91"), ("Language models", "#dfc3ff"),
-    ("Full-stack apps", "#9ee8d2"), ("Data experiments", "#b1dcff"),
-    ("Arcade games", "#ffdd85"),
-]
-PROJECTS = [
-    ("signal", "A1", "Signal Desk", "Trace a chat answer back", "to the report it cites.", "#ff997d"),
-    ("retina", "A2", "RetinaBridge", "See a retinal image beside", "the model’s heatmap.", "#8adecb"),
-    ("agrilens", "A3", "AgriLens LLM Benchmark", "Compare two local LLMs", "on 2,200 crop records.", "#ffda78"),
-    ("gamearena", "B1", "GameArena", "Play seven arcade games", "in a team tournament.", "#c8b1ef"),
-    ("flat-fork", "B2", "Flat & Fork", "Vote on dinner. Trade", "tomorrow’s laundry turn.", "#ffc0cf"),
-    ("frameflow", "B3", "FrameFlow", "Skip frames. Add delays.", "Watch the pipeline respond.", "#a7d2f6"),
-]
+# The A and B sides follow the six featured repositories in their pinned order.
+TRACKS = (
+    ("A1", "Source-backed search", "Follow a chat answer back to its report.", "#9fc0ff"),
+    ("A2", "Computer vision", "Look at the pixels behind a prediction.", "#d2aaff"),
+    ("A3", "Language models", "Give two models the same seven numbers.", "#d8ee8e"),
+    ("B1", "Arcade games", "Keep score while fifty teams play.", "#ff91c2"),
+    ("B2", "Full-stack apps", "Give tonight’s kitchen shift to a flatmate.", "#87dfff"),
+    ("B3", "Data experiments", "Turn up the delay and watch frames drop.", "#aeb0ff"),
+)
 
-
-def text(x, y, value, size, *, fill=INK, family=SANS, weight=400, style="", extra=""):
-    return (f'<text x="{x}" y="{y}" fill="{fill}" font-family="{family}" font-size="{size}" '
-            f'font-weight="{weight}" style="{style}" {extra}>{escape(value)}</text>')
-
-
-def reel(x):
-    teeth = "".join(f'<rect x="-3" y="-18" width="6" height="9" rx="1.5" fill="{INK}" transform="rotate({a})"/>' for a in range(0,360,60))
-    return f'''<g transform="translate({x} 111)">
-      <circle r="33" fill="#433e47" stroke="{INK}" stroke-width="3"/>
-      <circle r="28" fill="none" stroke="#ac8776" stroke-width="1.4" stroke-dasharray="2 3"/>
-      <circle r="21" fill="{PAPER}" stroke="{INK}" stroke-width="3"/>
-      <g class="wheel">{teeth}<path d="M-9 0 -4 -7 4 -7 9 0 4 7 -4 7Z" fill="{INK}"/></g>
-    </g>'''
-
-
-def cassette():
-    bolts = "".join(f'<g transform="translate({x} {y})"><circle r="4" fill="#f9c39d" stroke="{INK}" stroke-width="1.8"/><path d="m-2 1 4-2" stroke="{INK}" stroke-width="1.3"/></g>' for x,y in ((12,13),(310,13),(12,194),(310,194)))
-    marks = "".join(f'<path d="M{x} 137v{6 if x%12 == 0 else 3}" stroke="#dbad79" stroke-width="1.2"/>' for x in range(132,191,6))
-    return f'''<rect x="6" y="9" width="324" height="207" rx="16" fill="{INK}"/>
-    <rect width="324" height="207" rx="16" fill="{RED}" stroke="{INK}" stroke-width="4"/>
-    <rect x="7" y="6" width="310" height="194" rx="12" fill="none" stroke="#ffaf82" stroke-width="2"/>
-    <rect x="23" y="15" width="278" height="146" rx="10" fill="{PAPER}" stroke="{INK}" stroke-width="3"/>
-    <rect x="24" y="59" width="276" height="14" fill="{GOLD}"/><rect x="24" y="73" width="276" height="7" fill="{INK}"/>
-    {text(37,49,"SIDE A",24,weight=900,style="letter-spacing:-1px")}
-    {text(129,48,"THE OM MIX",19,family=MONO,weight=700)}
-    <path d="M260 27h23v19h-23z" fill="{INK}"/>{text(265,41,"▶",11,fill=PAPER)}
-    <rect x="45" y="84" width="234" height="57" rx="29" fill="#d3aea0" stroke="{INK}" stroke-width="3"/>
-    <rect x="111" y="93" width="101" height="33" rx="6" fill="#573f36" stroke="{INK}" stroke-width="3"/>
-    <path d="M116 117q27 8 46-1t45-4" fill="none" stroke="#c89e71" stroke-width="2"/>
-    <path d="M122 98h69" stroke="#f4ddbd" stroke-width="2"/>{marks}
-    {reel(87)}{reel(237)}
-    <path d="M67 200l10-27h171l10 27z" fill="#d27c64" stroke="{INK}" stroke-width="3"/>
-    <path d="M84 178h155" stroke="#fcb394" stroke-width="2"/>
-    <g fill="{INK}"><circle cx="94" cy="193" r="4"/><circle cx="231" cy="193" r="4"/>
-    <rect x="121" y="190" width="10" height="8" rx="2"/><rect x="192" y="190" width="10" height="8" rx="2"/></g>
-    {bolts}'''
+# Each mark represents the thing visitors can actually explore in the repo.
+PROJECTS = (
+    ("signal", "Signal Desk", "Trace a chat answer back", "to the report it cites.",
+     "#bacbff", "#83a6ff", '<path d="M4 9h9l5 5h10M4 23h9l5-5h10"/><circle cx="3" cy="9" r="2"/><circle cx="3" cy="23" r="2"/><circle cx="29" cy="16" r="3"/>'),
+    ("retina", "RetinaBridge", "See a retinal image beside", "the model’s heatmap.",
+     "#e2c6ff", "#c58cf9", '<path d="M1 16q15-19 30 0-15 19-30 0Z"/><circle cx="16" cy="16" r="6"/><circle cx="17" cy="15" r="1.5"/>'),
+    ("agrilens", "AgriLens LLM Benchmark", "Compare two local models", "on 2,200 crop records.",
+     "#e7f8a4", "#c2e574", '<path d="M6 27c2-8 9-13 18-20M9 23C4 12 12 3 28 3c0 14-6 23-19 20Z"/><path d="m15 17-1-6m5 2 5-1"/>'),
+    ("gamearena", "GameArena", "Play seven arcade games", "in a team tournament.",
+     "#ffbdde", "#ff87b9", '<path d="M9 10h14q4 0 6 8l2 7q-2 4-5 1l-5-5H11l-5 5q-4 3-5-1l2-9q2-6 6-6Z"/><path d="M8 13v6m-3-3h6"/><circle cx="23" cy="15" r="1"/><circle cx="26" cy="18" r="1"/>'),
+    ("flat-fork", "Flat & Fork", "Vote on dinner. Hand over", "today’s laundry turn.",
+     "#b5edff", "#78d6f2", '<circle cx="18" cy="16" r="8"/><circle cx="18" cy="16" r="5"/><path d="M3 4v9q1 4 3 0V4M4.5 16v12M29 4v24"/>'),
+    ("frameflow", "FrameFlow", "Skip frames. Add delays.", "Watch the pipeline respond.",
+     "#c5bdff", "#a9a0fa", '<rect x="11" y="6" width="19" height="15" rx="2"/><path d="M7 10H5v15h20v-2M2 15v13h18"/><path d="m16 10 7 4-7 4z"/>'),
+)
 
 
-def dial(x, y, scale=1):
-    channels = []
-    for i, (title, color) in enumerate(TRACKS):
-        lag = -((len(TRACKS) - i) % len(TRACKS)) * 3
-        channels.append(f'<g class="channel c{i}" opacity="{int(i == 0)}" style="animation-delay:{lag}s">'
-                        + text(16,51,title,26,fill=color,weight=700) + '</g>')
-    bars = []
-    for i,h in enumerate((12,20,29,17,25,11)):
-        bars.append(f'<rect class="meter" x="{271+i*8}" y="{52-h}" width="5" height="{h}" rx="1.5" fill="{MINT}" style="animation-delay:{-i*.19:.2f}s"/>')
-    return (f'<g transform="translate({x} {y}) scale({scale})"><rect width="336" height="65" rx="7" fill="{INK}"/>'
-            + text(17,21,"NOW PLAYING",12,fill=PAPER,family=MONO,weight=700,style="letter-spacing:1.6px")
-            + "".join(channels+bars) + '</g>')
+def label(x, y, value, size, *, fill=WHITE, weight=400, family=SANS, attrs=""):
+    return (f'<text x="{x}" y="{y}" fill="{fill}" font-family="{family}" '
+            f'font-size="{size}" font-weight="{weight}" {attrs}>{escape(value)}</text>')
 
 
-def cover(mobile, sticker):
-    width, height = (440,470) if mobile else (1100,390)
-    panel = "M0 249L440 232V470H0Z" if mobile else "M642 0H1100V390H589Z"
-    title_x, title_y, scale = (23,20,.72) if mobile else (40,41,1)
-    tape = "translate(35 255) rotate(-8 144 94) scale(.80)" if mobile else "translate(677 76) rotate(-8 162 103) scale(1.08)"
-    duck = "translate(297 314) rotate(7 59 59) scale(.79)" if mobile else "translate(939 205) rotate(6 75 75)"
-    star = "translate(335 248) scale(.7)" if mobile else "translate(1015 67)"
-    playing = dial(22,176,.76) if mobile else dial(44,276,1.02)
-    small = text(0,11,"BENGALURU, INDIA",16,weight=700,family=MONO,style="letter-spacing:2px")
-    titles = (text(0,109,"Om Solanki",98,weight=900,style="letter-spacing:-6px",extra='textLength="512" lengthAdjust="spacingAndGlyphs"')
-              + text(4,193,"on shuffle.",90,fill="#b23929",family="Georgia,Times New Roman,serif",weight=700,style="font-style:italic;letter-spacing:-4px"))
-    colophon = (text(18,height-15,"PERSONAL MIXTAPE",11,family=MONO,weight=700,style="letter-spacing:1.1px")
-                + text(width-18,height-15,"SIDE A  /  STEREO",11,family=MONO,weight=700,extra='text-anchor="end"',style="letter-spacing:1px"))
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">
-<title id="title">Om Solanki on shuffle</title>
-<desc id="desc">A rotating cassette plays computer vision, language models, full-stack apps, data experiments and arcade games. A rubber duck in headphones keeps an eye on the mix.</desc>
+def player(x, y, scale):
+    """A 36-second playlist with six full-size, individually readable tracks."""
+    slots = "".join(f'<rect x="{17+i*66}" y="99" width="59" height="4" rx="2"/>' for i in range(len(TRACKS)))
+    out = [f'<g transform="translate({x} {y}) scale({scale})">',
+           '<rect x=".75" y=".75" width="424.5" height="117" rx="13" fill="#141932" stroke="#5662a5" stroke-width="1.5"/>',
+           label(17,25,"NOW PLAYING",13,family=MONO,weight=700,fill="#c4c9ed",attrs='letter-spacing="1.6"'),
+           f'<g fill="#3a416b">{slots}</g>']
+    for i, (code, name, line, color) in enumerate(TRACKS):
+        # Start each later track in its hidden portion of the cycle.
+        delay = -((len(TRACKS)-i) % len(TRACKS)) * TRACK_SECONDS
+        out.extend([f'<g class="track" opacity="{int(i==0)}" style="animation-delay:{delay}s">',
+                    label(409,25,code,14,family=MONO,fill=color,weight=700,attrs='text-anchor="end"'),
+                    label(16,61,name,31,weight=750,fill=color,attrs='letter-spacing="-.6"'),
+                    label(17,85,line,16,fill=WHITE),
+                    f'<rect x="{17+i*66}" y="99" width="59" height="4" rx="2" fill="{color}"/></g>'])
+    for i,h in enumerate((12,19,30,22,13,25)):
+        out.append(f'<rect class="meter" x="{353+i*10}" y="{64-h}" width="5" height="{h}" rx="2" fill="#a5b5ff" style="animation-delay:{-.23*i:.2f}s"/>')
+    return "".join([*out, "</g>"])
+
+
+def turn_reel(cx, cy, speed):
+    # Clip and rotate only the printed hub. The tape window stays aligned.
+    return f'''<g transform="translate({cx} {cy})"><g clip-path="url(#hub)">
+    <g class="reel" style="animation-duration:{speed}s"><use xlink:href="#rooftop" x="{-cx}" y="{-cy}"/></g></g></g>'''
+
+
+def cover(mobile, artwork):
+    w,h = (460,571) if mobile else (1120,432)
+    margin = 22 if mobile else 40
+    location_y = 316 if mobile else 54
+    name_y, sub_y = (376,428) if mobile else (153,236)
+    name_size, sub_size = (65,59) if mobile else (94,90)
+    name_width = 303 if mobile else 452
+    placement = 'translate(0 -2) scale(.29948)' if mobile else 'translate(430 -7) scale(.45)'
+    player_group = player(margin,446,.975) if mobile else player(margin,275,1)
+    direction = 'x1="0" x2="0" y1="0" y2="1"' if mobile else 'x1="0" x2="1" y1="0" y2="0"'
+    fade = ('<stop offset="0" stop-color="#10142e" stop-opacity="0"/><stop offset=".78" stop-color="#10142e" stop-opacity="0"/>'
+            '<stop offset="1" stop-color="#10142e"/>') if mobile else (
+            '<stop offset="0" stop-color="#10142e"/><stop offset=".40" stop-color="#10142e"/>'
+            '<stop offset=".53" stop-color="#10142e" stop-opacity=".45"/><stop offset=".61" stop-color="#10142e" stop-opacity="0"/>')
+    fade_h = 307 if mobile else h
+    # Without CSS animation (including a reduced-motion preference), track A1 is visible.
+    static_alt = "Six tracks cover search, computer vision, language models, arcade games, full-stack apps and data experiments."
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-labelledby="cover-title cover-desc">
+<title id="cover-title">Om Solanki on shuffle</title>
+<desc id="cover-desc">A headphone-wearing duck sits on a cassette deck above the Bengaluru skyline at night. {static_alt}</desc>
 <defs>
- <clipPath id="cover"><rect width="{width}" height="{height}" rx="13"/></clipPath>
- <pattern id="speck" width="11" height="9" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r=".65" fill="{INK}" opacity=".16"/><circle cx="7" cy="6" r=".55" fill="{INK}" opacity=".15"/></pattern>
- <pattern id="dots" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.25" fill="#286f66" opacity=".40"/></pattern>
+ <clipPath id="outer"><rect width="{w}" height="{h}" rx="17"/></clipPath>
+ <clipPath id="hub"><circle r="35"/></clipPath>
+ <image id="rooftop" width="1536" height="1024" preserveAspectRatio="none" xlink:href="data:image/jpeg;base64,{artwork}"/>
+ <linearGradient id="image-fade" {direction} gradientUnits="objectBoundingBox">{fade}</linearGradient>
+ <linearGradient id="title-ink"><stop stop-color="#9caeff"/><stop offset=".51" stop-color="#d4a5ff"/><stop offset="1" stop-color="#ff87be"/></linearGradient>
  <style>
- @keyframes spin{{to{{transform:rotate(360deg)}}}}
- @keyframes channel{{0%,18%{{opacity:1}}20%,99.8%{{opacity:0}}100%{{opacity:1}}}}
- @keyframes meter{{0%,100%{{transform:scaleY(.48)}}50%{{transform:scaleY(1)}}}}
- @keyframes nod{{0%,100%{{transform:rotate(-2deg)}}50%{{transform:rotate(2deg)}}}}
+ @keyframes play{{0%,15.7%{{opacity:1}}16.6667%,99.8%{{opacity:0}}100%{{opacity:1}}}}
+ @keyframes wind{{to{{transform:rotate(360deg)}}}}
+ @keyframes levels{{0%,100%{{transform:scaleY(.45)}}50%{{transform:scaleY(1)}}}}
  @media (prefers-reduced-motion:no-preference){{
- .wheel{{animation:spin 3.2s linear infinite}} .channel{{animation:channel 15s linear infinite}}
- .meter{{transform-box:fill-box;transform-origin:center bottom;animation:meter 1.05s ease-in-out infinite}}
- .duck{{transform-box:fill-box;transform-origin:center bottom;animation:nod 2.5s ease-in-out infinite}}
+  .track{{animation:play {len(TRACKS)*TRACK_SECONDS}s linear infinite}}
+  .reel{{animation:wind 4s linear infinite;transform-origin:0 0}}
+  .meter{{animation:levels 1.25s ease-in-out infinite;transform-box:fill-box;transform-origin:center bottom}}
  }}
  </style>
 </defs>
-<g clip-path="url(#cover)">
-<rect width="{width}" height="{height}" fill="{PAPER}"/><path d="{panel}" fill="{MINT}"/><path d="{panel}" fill="url(#dots)"/>
-<rect width="{width}" height="{height}" fill="url(#speck)"/>
-<g transform="{star}" fill="{GOLD}" stroke="{INK}" stroke-width="2.5"><path d="m0-26 6 15 14-8-6 15 17 3-16 6 9 13-16-6-5 17-4-16-15 7 8-14-17-4 17-5-7-15 14 8z"/></g>
-<g transform="translate({title_x} {title_y}) scale({scale})">{small}{titles}</g>
-{playing}
-<g transform="{tape}">{cassette()}</g>
-<g transform="{duck}"><g class="duck"><image width="155" height="155" xlink:href="data:image/png;base64,{sticker}"/></g></g>
-<rect y="{height-31}" width="{width}" height="31" fill="{PAPER}"/><path d="M0 {height-31}H{width}" stroke="{INK}" stroke-width="2"/>{colophon}
-</g></svg>
+<g clip-path="url(#outer)">
+ <rect width="{w}" height="{h}" fill="#10142e"/>
+ <g transform="{placement}"><use xlink:href="#rooftop"/>{turn_reel(725,611,4)}{turn_reel(902,611,4.4)}</g>
+ <rect width="{w}" height="{fade_h}" fill="url(#image-fade)"/>
+ <g transform="translate({margin} {location_y-12})"><circle cx="7" cy="6" r="5" fill="#ff86c2"/><path d="M17 0q6 6 0 12m6-16q10 10 0 20" fill="none" stroke="#889fff" stroke-width="2.2" stroke-linecap="round"/></g>
+ {label(margin+41,location_y,"BENGALURU, INDIA",15,fill=MUTED,weight=700,family=MONO,attrs='letter-spacing="1.5"')}
+ {label(margin-3,name_y,"Om Solanki",name_size,weight=800,attrs=f'letter-spacing="-4" textLength="{name_width}" lengthAdjust="spacingAndGlyphs"')}
+ {label(margin-1,sub_y,"on shuffle.",sub_size,fill='url(#title-ink)',weight=700,family='Georgia,Times New Roman,serif',attrs='font-style="italic" letter-spacing="-3"')}
+ {player_group}
+</g>
+<rect x=".75" y=".75" width="{w-1.5}" height="{h-1.5}" rx="17" fill="none" stroke="#54558b" stroke-width="1.5"/>
+</svg>
 '''
 
 
-def sleeve(entry):
-    slug, code, title, line1, line2, color = entry
-    size = 17 if len(title)>18 else 23
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="270" height="96" viewBox="0 0 270 96" role="img" aria-labelledby="title">
-<title id="title">{escape(title)}. {escape(line1)} {escape(line2)}</title>
-<rect x="1" y="1" width="268" height="94" rx="7" fill="{color}" stroke="{INK}" stroke-width="2"/>
-<path d="M35 2v92m5-92v92" fill="none" stroke="{INK}" stroke-width="1.5"/>
-<g fill="none" stroke="{INK}" stroke-width="2"><circle cx="18" cy="18" r="6"/><circle cx="18" cy="18" r="2"/><circle cx="18" cy="78" r="6"/><circle cx="18" cy="78" r="2"/></g>
-{text(18,53,code,13,weight=700,family=MONO,extra='text-anchor="middle"')}
-{text(50,30,title,size,weight=800,style='letter-spacing:-.7px')}
-{text(50,58,line1,15,family='Arial,Helvetica,sans-serif')}
-{text(50,78,line2,15,family='Arial,Helvetica,sans-serif')}
+def sleeve(project, track):
+    _, title, first, second, light, bright, mark = project
+    code = track[0]
+    size = 18 if len(title)>18 else 25
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="300" height="110" viewBox="0 0 300 110" role="img" aria-labelledby="title">
+<title id="title">{escape(code)} · {escape(title)}. {escape(first)} {escape(second)}</title>
+<defs><linearGradient id="wash" x2="1" y2=".8"><stop stop-color="{light}"/><stop offset="1" stop-color="{bright}"/></linearGradient></defs>
+<rect x="1" y="1" width="298" height="108" rx="11" fill="url(#wash)" stroke="{INK}" stroke-width="2"/>
+<path d="M56 3v104" stroke="{INK}" stroke-opacity=".45" stroke-dasharray="2 3"/>
+<g transform="translate(11 21)" stroke="{INK}" fill="none" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">{mark}</g>
+{label(27,83,code,15,fill=INK,family=MONO,weight=700,attrs='text-anchor="middle"')}
+{label(69,38,title,size,fill=INK,weight=750,attrs='letter-spacing="-.6"')}
+{label(69,67,first,16,fill=INK)}
+{label(69,88,second,16,fill=INK)}
 </svg>
 '''
 
 
 if __name__ == "__main__":
-    sticker = base64.b64encode((ART / "duck.png").read_bytes()).decode()
+    image = base64.b64encode((ART / "rooftop-radio.jpg").read_bytes()).decode("ascii")
     for mobile, filename in ((False,"cover.svg"),(True,"cover-mobile.svg")):
-        (ART / filename).write_text(cover(mobile,sticker), encoding="utf-8")
-    for project in PROJECTS:
-        (ART / f"{project[0]}.svg").write_text(sleeve(project), encoding="utf-8")
+        (ART / filename).write_text(cover(mobile,image), encoding="utf-8")
+    for project, track in zip(PROJECTS, TRACKS, strict=True):
+        (ART / (project[0] + ".svg")).write_text(sleeve(project, track), encoding="utf-8")
