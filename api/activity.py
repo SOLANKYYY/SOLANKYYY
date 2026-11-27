@@ -67,8 +67,8 @@ def with_dateline(svg, data):
     root = root.replace(f'0 0 {w} {h}"', f'0 0 {w} {h+30}"')
     svg = root.replace(f'height="{h}"', f'height="{h+30}"') + ">" + rest
     status = "Last verified" if data["source"] == "snapshot" else "Through"
-    caption = (f'<rect x="0" y="{h+4}" width="{w}" height="26" rx="7" fill="#202535"/>'
-               f'<text x="13" y="{h+22}" fill="#fff4d9" font-size="13" '
+    caption = (f'<rect x="0" y="{h+4}" width="{w}" height="26" rx="7" fill="#181a35"/>'
+               f'<text x="13" y="{h+22}" fill="#e8e5ff" font-size="13" '
                f'font-family="Arial,sans-serif">{status} {data["through"]} UTC</text>')
     return svg.replace("</svg>", caption + "</svg>")
 

@@ -22,11 +22,11 @@ END = "<!-- github-stats:end -->"
 ACTIVITY_START = "<!-- github-activity:start -->"
 ACTIVITY_END = "<!-- github-activity:end -->"
 LANG_COLORS = {
-    "HTML": "#ff9c81", "Python": "#86c9ff", "JavaScript": "#f5d76b",
-    "Jupyter Notebook": "#efb3ec", "TypeScript": "#77e1d1",
-    "Java": "#c3afff", "MATLAB": "#ffbc79", "Other": "#c3c0ce",
+    "HTML": "#ff8cbb", "Python": "#8fc7ff", "JavaScript": "#daf28a",
+    "Jupyter Notebook": "#e3b1ff", "TypeScript": "#88e1f9",
+    "Java": "#b1a9ff", "MATLAB": "#ffd197", "Other": "#c5c4dc",
 }
-PALETTE = ("#a5d99f", "#f6c0ce", "#b4c4ff", "#d5c991")
+PALETTE = ("#c3e6b2", "#f7bad9", "#a9bcff", "#dfe6ad")
 
 
 def request(url, token=None, body=None, accept="application/vnd.github+json"):
@@ -144,14 +144,14 @@ def stat_card(stats, mobile):
     parts = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {height}" width="{w}" height="{height}" role="img" aria-labelledby="t d">',
              '<title id="t">GitHub stats for Om Solanki</title>',
              f'<desc id="d">{escape(accessible_summary(stats))}</desc>',
-             f'<rect width="{w}" height="{height}" rx="17" fill="#211d35"/>']
-    for index, ((value, label), color) in enumerate(zip(labels(stats), ("#ffcca8", "#c8b6ff", "#9debd5", "#ffc1e0"))):
+             f'<rect width="{w}" height="{height}" rx="17" fill="#171a37"/>']
+    for index, ((value, label), color) in enumerate(zip(labels(stats), ("#ff86c2", "#c5adff", "#86dfff", "#d8ee8e"))):
         x = padding + index % cols * step
         y = values_y + index // cols * 91
-        parts.append(text(x, y, f"{value:,}", 47 if mobile else 58, color, 700, "Georgia,serif"))
-        parts.append(text(x, y + 26, label, 16 if mobile else 18, "#f5eefa"))
-    parts.extend([f'<path d="M{padding} {lang_y-30}H{w-padding}" stroke="#4e4664"/>',
-                  text(padding, lang_y, "Primary language by public repository", 18 if mobile else 20, "#f3edf9", 600)])
+        parts.append(text(x, y, f"{value:,}", 47 if mobile else 58, color, 700, "Inter,Arial,sans-serif"))
+        parts.append(text(x, y + 26, label, 16 if mobile else 18, "#f2f2ff"))
+    parts.extend([f'<path d="M{padding} {lang_y-30}H{w-padding}" stroke="#4b497a"/>',
+                  text(padding, lang_y, "Primary language by public repository", 18 if mobile else 20, "#f2f2ff", 600)])
     bar_width = w - 2 * padding
     parts.append(f'<defs><clipPath id="bar"><rect x="{padding}" y="{lang_y+13}" width="{bar_width}" height="12" rx="6"/></clipPath></defs><g clip-path="url(#bar)">')
     x = float(padding)
@@ -164,9 +164,9 @@ def stat_card(stats, mobile):
         x = padding + i % cols * step
         y = legend_y + i // cols * row_height
         parts.append(f'<rect x="{x}" y="{y-10}" width="9" height="9" rx="2" fill="{color}"/>')
-        parts.append(text(x+17, y, f"{name} · {count}", 15 if mobile else 16, "#efe9f7"))
+        parts.append(text(x+17, y, f"{name} · {count}", 15 if mobile else 16, "#e2e1f9"))
     if not rows:
-        parts.append(text(padding, legend_y, "No public repositories", 16, "#efe9f7"))
+        parts.append(text(padding, legend_y, "No public repositories", 16, "#e2e1f9"))
     return "\n".join(parts + ["</svg>", ""])
 
 
