@@ -1,5 +1,6 @@
-"""Refresh the profile's GitHub metrics and the accessible text in ReadMe.md."""
+"""Refresh the dated fallback for the live profile or a legacy static README."""
 from collections import Counter
+from dataclasses import asdict
 from datetime import date, datetime, timezone
 from hashlib import sha256
 from html import escape, unescape
@@ -84,6 +85,17 @@ def summarize(repos, contributions):
         "repos": len(repos), "stars": sum(r["stargazers_count"] for r in repos),
         "forks": sum(r["forks_count"] for r in repos), "contributions": contributions,
         "language_count": len(counts) - int("Unclassified" in counts), "languages": ordered,
+    }
+
+
+def activity_snapshot(activity, repos, source):
+    return {
+        "activity": json.loads(json.dumps(asdict(activity), default=date.isoformat)),
+        "overview": summarize(repos, None),
+        "through": activity.as_of.isoformat(),
+        "summary": description(activity),
+        "repositories": sorted(repo["name"] for repo in repos),
+        "source": source,
     }
 
 
@@ -228,6 +240,14 @@ if __name__ == "__main__":
     calendar = public_calendar(owner, cutoff, request)
     commits = public_commits(owner, repos, cutoff, request, token)
     activity = summarize_activity(cutoff, calendar, commits, len(repos))
-    inventory = collect(owner, repos)
-    write_activity(activity, owner)
-    write_stats(inventory, owner)
+    if "<!-- live-profile-stats -->" in (ROOT / "ReadMe.md").read_text(encoding="utf-8"):
+        fallback = ROOT / "assets" / "mixtape" / "activity-snapshot.json"
+        updated = json.dumps(activity_snapshot(activity, repos, "snapshot"), indent=2) + "\n"
+        if not fallback.exists() or fallback.read_text(encoding="utf-8") != updated:
+            temporary = fallback.with_suffix(".tmp")
+            temporary.write_text(updated, encoding="utf-8")
+            temporary.replace(fallback)
+    else:
+        inventory = collect(owner, repos)
+        write_activity(activity, owner)
+        write_stats(inventory, owner)

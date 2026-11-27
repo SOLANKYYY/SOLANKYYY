@@ -1,0 +1,12 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "api/activity.py": {
+      "includeFiles": "{scripts/*.py,assets/mixtape/activity-snapshot.json}",
+      "maxDuration": 60
+    }
+  },
+  "redirects": [
+    { "source": "/", "destination": "/api/activity", "permanent": false }
+  ]
+}

@@ -81,6 +81,9 @@ def public_commits(owner, repos, as_of, request, token=None):
     for repo in repos:
         if repo["private"] or repo["owner"]["login"].casefold() != owner.casefold():
             continue
+        # A repository last pushed before the window cannot have recent pushed commits.
+        if repo.get("pushed_at") and repo["pushed_at"][:10] < first.isoformat():
+            continue
         page = 1
         while True:
             params = urlencode({
